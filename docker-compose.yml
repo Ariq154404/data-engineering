@@ -1,0 +1,73 @@
+version: '3'
+
+services:
+  webserver:
+    image: apache/airflow:2.2.0
+    command: webserver
+    environment:
+      - AIRFLOW__CORE__EXECUTOR=LocalExecutor
+      - AIRFLOW__CORE__SQL_ALCHEMY_CONN=postgresql+psycopg2://airflow:airflow@postgres:5432/airflow
+      - AIRFLOW__CORE__FERNET_KEY=4fpSEalcWU7eEyFueElxfzQTxRMw-RAiiZtqmBm_CJo=
+      - AIRFLOW_WEBSERVER_SECRET_KEY=this_is_a_very_secured_key
+    volumes:
+      - ./dags:/opt/airflow/dags
+      - ./requirements.txt:/opt/airflow/requirements.txt
+      - ./env:/opt/airflow/.env
+    ports:
+      - "8080:8080"
+    healthcheck:
+      test: ['CMD-SHELL', "[ -f /opt/airflow/airflow-webserver.pid ]"]
+      interval: 30s
+      timeout: 30s
+      retries: 3
+    networks:
+      - confluent
+    depends_on:
+      - postgres
+
+  scheduler:
+    image: apache/airflow:2.2.0
+    command: bash -c "pip install -r /opt/airflow/requirements.txt && airflow db upgrade && airflow scheduler"
+    environment:
+      - AIRFLOW__CORE__EXECUTOR=LocalExecutor
+      - AIRFLOW__CORE__SQL_ALCHEMY_CONN=postgresql+psycopg2://airflow:airflow@postgres:5432/airflow
+      - AIRFLOW__CORE__FERNET_KEY=4fpSEalcWU7eEyFueElxfzQTxRMw-RAiiZtqmBm_CJo=
+      - AIRFLOW_WEBSERVER_SECRET_KEY=this_is_a_very_secured_key
+    volumes:
+      - ./dags:/opt/airflow/dags
+      - ./requirements.txt:/opt/airflow/requirements.txt
+      - ./env:/opt/airflow/.env
+    networks:
+      - confluent
+    depends_on:
+      - webserver
+
+  postgres:
+    image: postgres:14.0
+    environment:
+      - POSTGRES_USER=airflow
+      - POSTGRES_PASSWORD=airflow
+      - POSTGRES_DB=airflow
+    logging:
+      options:
+        max-size: 10m
+        max-file: "3"
+    networks:
+      - confluent
+
+  cassandra_db:
+    image: cassandra:latest
+    container_name: cassandra
+    hostname: cassandra
+    ports:
+      - "9042:9042"
+    environment:
+      - MAX_HEAP_SIZE=512M
+      - HEAP_NEWSIZE=100M
+      - CASSANDRA_USERNAME=cassandra
+      - CASSANDRA_PASSWORD=cassandra
+    networks:
+      - confluent
+
+networks:
+  confluent:

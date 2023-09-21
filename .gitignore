@@ -1,3 +1,5 @@
 *.txt
 *.env
 myenv/
+dags/env/
+dags/resumes/` 
