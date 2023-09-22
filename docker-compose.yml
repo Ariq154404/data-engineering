@@ -2,8 +2,13 @@ version: '3'
 
 services:
   webserver:
-    image: apache/airflow:2.2.0
-    command: webserver
+    image: apache/airflow:2.6.0-python3.9
+    command: >
+      bash -c "python -m pip install --upgrade pip &&
+               pip install -r /opt/airflow/requirements.txt &&
+               airflow users create --username admin --firstname admin --lastname admin --role Admin --email ariq913@gmail.com --password admin &&
+               airflow db init &&
+               airflow webserver"
     environment:
       - AIRFLOW__CORE__EXECUTOR=LocalExecutor
       - AIRFLOW__CORE__SQL_ALCHEMY_CONN=postgresql+psycopg2://airflow:airflow@postgres:5432/airflow
@@ -13,6 +18,7 @@ services:
       - ./dags:/opt/airflow/dags
       - ./requirements.txt:/opt/airflow/requirements.txt
       - ./env:/opt/airflow/.env
+      - ./logs:/opt/airflow/logs
     ports:
       - "8080:8080"
     healthcheck:
@@ -26,8 +32,12 @@ services:
       - postgres
 
   scheduler:
-    image: apache/airflow:2.2.0
-    command: bash -c "pip install -r /opt/airflow/requirements.txt && airflow db upgrade && airflow scheduler"
+    image: apache/airflow:2.6.0-python3.9
+    command: >
+      bash -c "python -m pip install --upgrade pip &&
+               pip install -r /opt/airflow/requirements.txt &&
+               airflow db upgrade &&
+               airflow scheduler"
     environment:
       - AIRFLOW__CORE__EXECUTOR=LocalExecutor
       - AIRFLOW__CORE__SQL_ALCHEMY_CONN=postgresql+psycopg2://airflow:airflow@postgres:5432/airflow
@@ -37,6 +47,7 @@ services:
       - ./dags:/opt/airflow/dags
       - ./requirements.txt:/opt/airflow/requirements.txt
       - ./env:/opt/airflow/.env
+      - ./logs:/opt/airflow/logs
     networks:
       - confluent
     depends_on:

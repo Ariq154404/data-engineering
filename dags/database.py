@@ -5,21 +5,16 @@ from cassandra.query import SimpleStatement
 from cassandra.policies import RetryPolicy
 from datetime import datetime, timedelta
 
-class CassandraSession:
-    _instance = None
+class CassandraSessions:
 
-    def __new__(cls, *args, **kwargs):
-        if not cls._instance:
-            cls._instance = super(CassandraSession, cls).__new__(cls)
-        return cls._instance
-
-    def __init__(self, keyspace: str, nodes: list = ['localhost']):
+    def __init__(self, keyspace: str, nodes: list = ['cassandra_db']):
         self.keyspace = keyspace
         self.cluster = Cluster(nodes)
         self.session = self.cluster.connect()
         self._create_keyspace()
         self.session.set_keyspace(self.keyspace)
         self._create_schema()
+        print('Database creation DONE')
 
     def _create_keyspace(self):
         query = f"""
@@ -27,6 +22,7 @@ class CassandraSession:
         WITH REPLICATION = {{ 'class' : 'SimpleStrategy', 'replication_factor' : 1 }};
         """
         self.session.execute(query)
+        print('Created Keyspace')
 
     def _create_schema(self):
         query = """
@@ -43,6 +39,7 @@ class CassandraSession:
         );
         """
         self.session.execute(query)
+        print("Created Schema")
 
     def insert_job_data(self, job_data: dict):
         job_datetime = datetime.fromisoformat(job_data['job_posted_at_datetime_utc'].replace('Z', '+00:00'))
@@ -59,6 +56,7 @@ class CassandraSession:
                                      job_data['job_description'], 
                                      job_data['job_posted_at_timestamp'], 
                                      job_data['skills']))
+        print("Inserted data")
 
     def retrieve_jobs_last_day(self):
         query = """
@@ -69,10 +67,12 @@ class CassandraSession:
         #print("SS",SimpleStatement(query, (one_day_ago,)))
         rows = self.session.execute(query, [one_day_ago])
         return [row._asdict() for row in rows]
+       
 
     def close(self):
         self.session.shutdown()
         self.cluster.shutdown()
+        print("Session shutdouwn")
 
 # Usage:
 # cassandra_manager = CassandraSession(keyspace='job_data')

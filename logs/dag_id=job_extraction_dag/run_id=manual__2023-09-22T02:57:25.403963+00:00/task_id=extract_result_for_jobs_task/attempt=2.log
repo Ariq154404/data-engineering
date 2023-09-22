@@ -1,0 +1,57 @@
+[2023-09-22T03:02:30.400+0000] {taskinstance.py:1125} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: job_extraction_dag.extract_result_for_jobs_task manual__2023-09-22T02:57:25.403963+00:00 [queued]>
+[2023-09-22T03:02:30.407+0000] {taskinstance.py:1125} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: job_extraction_dag.extract_result_for_jobs_task manual__2023-09-22T02:57:25.403963+00:00 [queued]>
+[2023-09-22T03:02:30.408+0000] {taskinstance.py:1331} INFO - Starting attempt 2 of 2
+[2023-09-22T03:02:30.416+0000] {taskinstance.py:1350} INFO - Executing <Task(PythonOperator): extract_result_for_jobs_task> on 2023-09-22 02:57:25.403963+00:00
+[2023-09-22T03:02:30.421+0000] {standard_task_runner.py:57} INFO - Started process 344 to run task
+[2023-09-22T03:02:30.424+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'job_extraction_dag', 'extract_result_for_jobs_task', 'manual__2023-09-22T02:57:25.403963+00:00', '--job-id', '3', '--raw', '--subdir', 'DAGS_FOLDER/test.py', '--cfg-path', '/tmp/tmppck4zi8q']
+[2023-09-22T03:02:30.427+0000] {standard_task_runner.py:85} INFO - Job 3: Subtask extract_result_for_jobs_task
+[2023-09-22T03:02:30.441+0000] {logging_mixin.py:149} WARNING - /home/***/.local/lib/python3.9/site-packages/***/settings.py:188 DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+[2023-09-22T03:02:30.477+0000] {task_command.py:410} INFO - Running <TaskInstance: job_extraction_dag.extract_result_for_jobs_task manual__2023-09-22T02:57:25.403963+00:00 [running]> on host 15685e2bbc75
+[2023-09-22T03:02:30.538+0000] {taskinstance.py:1568} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='job_extraction_dag' AIRFLOW_CTX_TASK_ID='extract_result_for_jobs_task' AIRFLOW_CTX_EXECUTION_DATE='2023-09-22T02:57:25.403963+00:00' AIRFLOW_CTX_TRY_NUMBER='2' AIRFLOW_CTX_DAG_RUN_ID='manual__2023-09-22T02:57:25.403963+00:00'
+[2023-09-22T03:02:30.545+0000] {database.py:12} WARNING - Cluster.__init__ called with contact_points specified, but no load_balancing_policy. In the next major version, this will raise an error; please specify a load-balancing policy. (contact_points = ['localhost'], lbp = None)
+[2023-09-22T03:02:30.550+0000] {database.py:13} WARNING - [control connection] Error connecting to ::1:9042:
+Traceback (most recent call last):
+  File "cassandra/cluster.py", line 3541, in cassandra.cluster.ControlConnection._reconnect_internal
+  File "cassandra/cluster.py", line 3563, in cassandra.cluster.ControlConnection._try_connect
+  File "cassandra/cluster.py", line 1630, in cassandra.cluster.Cluster.connection_factory
+  File "cassandra/connection.py", line 850, in cassandra.connection.Connection.factory
+  File "/home/airflow/.local/lib/python3.9/site-packages/cassandra/io/asyncorereactor.py", line 347, in __init__
+    self._connect_socket()
+  File "cassandra/connection.py", line 917, in cassandra.connection.Connection._connect_socket
+OSError: [Errno 99] Tried connecting to [('::1', 9042, 0, 0)]. Last error: Cannot assign requested address
+[2023-09-22T03:02:30.552+0000] {database.py:13} WARNING - [control connection] Error connecting to 127.0.0.1:9042:
+Traceback (most recent call last):
+  File "cassandra/cluster.py", line 3541, in cassandra.cluster.ControlConnection._reconnect_internal
+  File "cassandra/cluster.py", line 3563, in cassandra.cluster.ControlConnection._try_connect
+  File "cassandra/cluster.py", line 1630, in cassandra.cluster.Cluster.connection_factory
+  File "cassandra/connection.py", line 850, in cassandra.connection.Connection.factory
+  File "/home/airflow/.local/lib/python3.9/site-packages/cassandra/io/asyncorereactor.py", line 347, in __init__
+    self._connect_socket()
+  File "cassandra/connection.py", line 917, in cassandra.connection.Connection._connect_socket
+ConnectionRefusedError: [Errno 111] Tried connecting to [('127.0.0.1', 9042)]. Last error: Connection refused
+[2023-09-22T03:02:30.554+0000] {database.py:13} ERROR - Control connection failed to connect, shutting down Cluster:
+Traceback (most recent call last):
+  File "cassandra/cluster.py", line 1700, in cassandra.cluster.Cluster.connect
+  File "cassandra/cluster.py", line 3507, in cassandra.cluster.ControlConnection.connect
+  File "cassandra/cluster.py", line 3552, in cassandra.cluster.ControlConnection._reconnect_internal
+cassandra.cluster.NoHostAvailable: ('Unable to connect to any servers', {'::1:9042': OSError(99, "Tried connecting to [('::1', 9042, 0, 0)]. Last error: Cannot assign requested address"), '127.0.0.1:9042': ConnectionRefusedError(111, "Tried connecting to [('127.0.0.1', 9042)]. Last error: Connection refused")})
+[2023-09-22T03:02:30.557+0000] {taskinstance.py:1847} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/operators/python.py", line 181, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/operators/python.py", line 198, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/test.py", line 70, in extract_result_for_jobs
+    cassandra_manager = CassandraSessions(keyspace='job_data')
+  File "/opt/airflow/dags/database.py", line 13, in __init__
+    self.session = self.cluster.connect()
+  File "cassandra/cluster.py", line 1677, in cassandra.cluster.Cluster.connect
+  File "cassandra/cluster.py", line 1713, in cassandra.cluster.Cluster.connect
+  File "cassandra/cluster.py", line 1700, in cassandra.cluster.Cluster.connect
+  File "cassandra/cluster.py", line 3507, in cassandra.cluster.ControlConnection.connect
+  File "cassandra/cluster.py", line 3552, in cassandra.cluster.ControlConnection._reconnect_internal
+cassandra.cluster.NoHostAvailable: ('Unable to connect to any servers', {'::1:9042': OSError(99, "Tried connecting to [('::1', 9042, 0, 0)]. Last error: Cannot assign requested address"), '127.0.0.1:9042': ConnectionRefusedError(111, "Tried connecting to [('127.0.0.1', 9042)]. Last error: Connection refused")})
+[2023-09-22T03:02:30.569+0000] {taskinstance.py:1368} INFO - Marking task as FAILED. dag_id=job_extraction_dag, task_id=extract_result_for_jobs_task, execution_date=20230922T025725, start_date=20230922T030230, end_date=20230922T030230
+[2023-09-22T03:02:30.580+0000] {standard_task_runner.py:104} ERROR - Failed to execute job 3 for task extract_result_for_jobs_task (('Unable to connect to any servers', {'::1:9042': OSError(99, "Tried connecting to [('::1', 9042, 0, 0)]. Last error: Cannot assign requested address"), '127.0.0.1:9042': ConnectionRefusedError(111, "Tried connecting to [('127.0.0.1', 9042)]. Last error: Connection refused")}); 344)
+[2023-09-22T03:02:30.597+0000] {local_task_job_runner.py:232} INFO - Task exited with return code 1
+[2023-09-22T03:02:30.612+0000] {taskinstance.py:2674} INFO - 0 downstream tasks scheduled from follow-on schedule check
