@@ -1,0 +1,25 @@
+[2023-09-23T00:06:51.596+0000] {taskinstance.py:1125} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: resume_generation_dag.generate_resume manual__2023-09-23T00:06:48.070725+00:00 [queued]>
+[2023-09-23T00:06:51.603+0000] {taskinstance.py:1125} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: resume_generation_dag.generate_resume manual__2023-09-23T00:06:48.070725+00:00 [queued]>
+[2023-09-23T00:06:51.604+0000] {taskinstance.py:1331} INFO - Starting attempt 1 of 1
+[2023-09-23T00:06:51.611+0000] {taskinstance.py:1350} INFO - Executing <Task(_PythonDecoratedOperator): generate_resume> on 2023-09-23 00:06:48.070725+00:00
+[2023-09-23T00:06:51.615+0000] {standard_task_runner.py:57} INFO - Started process 403 to run task
+[2023-09-23T00:06:51.618+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'resume_generation_dag', 'generate_resume', 'manual__2023-09-23T00:06:48.070725+00:00', '--job-id', '6', '--raw', '--subdir', 'DAGS_FOLDER/resume_generation.py', '--cfg-path', '/tmp/tmprmlhzocn']
+[2023-09-23T00:06:51.620+0000] {standard_task_runner.py:85} INFO - Job 6: Subtask generate_resume
+[2023-09-23T00:06:51.632+0000] {logging_mixin.py:149} WARNING - /home/***/.local/lib/python3.9/site-packages/***/settings.py:188 DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+[2023-09-23T00:06:51.658+0000] {task_command.py:410} INFO - Running <TaskInstance: resume_generation_dag.generate_resume manual__2023-09-23T00:06:48.070725+00:00 [running]> on host c90ec447a7d6
+[2023-09-23T00:06:51.712+0000] {taskinstance.py:1568} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='resume_generation_dag' AIRFLOW_CTX_TASK_ID='generate_resume' AIRFLOW_CTX_EXECUTION_DATE='2023-09-23T00:06:48.070725+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2023-09-23T00:06:48.070725+00:00'
+[2023-09-23T00:06:51.714+0000] {taskinstance.py:1847} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/decorators/base.py", line 220, in execute
+    return_value = super().execute(context)
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/operators/python.py", line 181, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/operators/python.py", line 198, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/resume_generation.py", line 92, in generate_resume
+    resume_gen(v['job_title'],",".join(v["skills"]),v['employer_name'],v['job_apply_link'])
+TypeError: can only join an iterable
+[2023-09-23T00:06:51.724+0000] {taskinstance.py:1368} INFO - Marking task as FAILED. dag_id=resume_generation_dag, task_id=generate_resume, execution_date=20230923T000648, start_date=20230923T000651, end_date=20230923T000651
+[2023-09-23T00:06:51.731+0000] {standard_task_runner.py:104} ERROR - Failed to execute job 6 for task generate_resume (can only join an iterable; 403)
+[2023-09-23T00:06:51.750+0000] {local_task_job_runner.py:232} INFO - Task exited with return code 1
+[2023-09-23T00:06:51.762+0000] {taskinstance.py:2674} INFO - 0 downstream tasks scheduled from follow-on schedule check

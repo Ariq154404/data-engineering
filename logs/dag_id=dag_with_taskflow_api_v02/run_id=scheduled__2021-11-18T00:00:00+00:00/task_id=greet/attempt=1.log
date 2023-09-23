@@ -1,0 +1,85 @@
+[2023-09-22T16:52:39.911+0000] {logging_mixin.py:149} WARNING - /home/***/.local/lib/python3.9/site-packages/***/utils/sqlalchemy.py:124 DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+[2023-09-22T16:52:40.178+0000] {taskinstance.py:1125} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: dag_with_taskflow_api_v02.greet scheduled__2021-11-18T00:00:00+00:00 [queued]>
+[2023-09-22T16:52:40.210+0000] {taskinstance.py:1125} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: dag_with_taskflow_api_v02.greet scheduled__2021-11-18T00:00:00+00:00 [queued]>
+[2023-09-22T16:52:40.214+0000] {taskinstance.py:1331} INFO - Starting attempt 1 of 6
+[2023-09-22T16:52:40.260+0000] {taskinstance.py:1350} INFO - Executing <Task(_PythonDecoratedOperator): greet> on 2021-11-18 00:00:00+00:00
+[2023-09-22T16:52:40.295+0000] {standard_task_runner.py:57} INFO - Started process 625 to run task
+[2023-09-22T16:52:40.327+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'dag_with_taskflow_api_v02', 'greet', 'scheduled__2021-11-18T00:00:00+00:00', '--job-id', '163', '--raw', '--subdir', 'DAGS_FOLDER/test2.py', '--cfg-path', '/tmp/tmp9jalsfdv']
+[2023-09-22T16:52:40.341+0000] {standard_task_runner.py:85} INFO - Job 163: Subtask greet
+[2023-09-22T16:52:40.403+0000] {logging_mixin.py:149} WARNING - /home/***/.local/lib/python3.9/site-packages/***/settings.py:188 DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+[2023-09-22T16:52:40.572+0000] {task_command.py:410} INFO - Running <TaskInstance: dag_with_taskflow_api_v02.greet scheduled__2021-11-18T00:00:00+00:00 [running]> on host 75cee4990e54
+[2023-09-22T16:52:40.605+0000] {logging_mixin.py:149} WARNING - /home/***/.local/lib/python3.9/site-packages/***/utils/sqlalchemy.py:124 DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+[2023-09-22T16:52:46.236+0000] {local_task_job_runner.py:122} ERROR - Received SIGTERM. Terminating subprocesses
+[2023-09-22T16:52:46.311+0000] {process_utils.py:131} INFO - Sending Signals.SIGTERM to group 625. PIDs of all processes in the group: [625]
+[2023-09-22T16:52:46.326+0000] {process_utils.py:86} INFO - Sending the signal Signals.SIGTERM to group 625
+[2023-09-22T16:52:46.336+0000] {taskinstance.py:1540} ERROR - Received SIGTERM. Terminating subprocesses.
+[2023-09-22T16:52:46.452+0000] {taskinstance.py:1847} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/taskinstance.py", line 1430, in _run_raw_task
+    self._execute_task_with_callbacks(context, test_mode)
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/taskinstance.py", line 1557, in _execute_task_with_callbacks
+    RenderedTaskInstanceFields.write(rtif)
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/utils/session.py", line 76, in wrapper
+    return func(*args, session=session, **kwargs)
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/renderedtifields.py", line 183, in write
+    session.merge(self)
+  File "/home/airflow/.local/lib/python3.9/site-packages/sqlalchemy/orm/session.py", line 3053, in merge
+    return self._merge(
+  File "/home/airflow/.local/lib/python3.9/site-packages/sqlalchemy/orm/session.py", line 3133, in _merge
+    merged = self.get(
+  File "/home/airflow/.local/lib/python3.9/site-packages/sqlalchemy/orm/session.py", line 2850, in get
+    return self._get_impl(
+  File "/home/airflow/.local/lib/python3.9/site-packages/sqlalchemy/orm/session.py", line 2972, in _get_impl
+    return db_load_fn(
+  File "/home/airflow/.local/lib/python3.9/site-packages/sqlalchemy/orm/loading.py", line 530, in load_on_pk_identity
+    session.execute(
+  File "/home/airflow/.local/lib/python3.9/site-packages/sqlalchemy/orm/session.py", line 1714, in execute
+    result = conn._execute_20(statement, params or {}, execution_options)
+  File "/home/airflow/.local/lib/python3.9/site-packages/sqlalchemy/engine/base.py", line 1705, in _execute_20
+    return meth(self, args_10style, kwargs_10style, execution_options)
+  File "/home/airflow/.local/lib/python3.9/site-packages/sqlalchemy/sql/elements.py", line 334, in _execute_on_connection
+    return connection._execute_clauseelement(
+  File "/home/airflow/.local/lib/python3.9/site-packages/sqlalchemy/engine/base.py", line 1564, in _execute_clauseelement
+    compiled_sql, extracted_params, cache_hit = elem._compile_w_cache(
+  File "/home/airflow/.local/lib/python3.9/site-packages/sqlalchemy/sql/elements.py", line 532, in _compile_w_cache
+    compiled_sql = self._compiler(
+  File "/home/airflow/.local/lib/python3.9/site-packages/sqlalchemy/sql/elements.py", line 567, in _compiler
+    return dialect.statement_compiler(dialect, self, **kw)
+  File "/home/airflow/.local/lib/python3.9/site-packages/sqlalchemy/sql/compiler.py", line 809, in __init__
+    Compiled.__init__(self, dialect, statement, **kwargs)
+  File "/home/airflow/.local/lib/python3.9/site-packages/sqlalchemy/sql/compiler.py", line 464, in __init__
+    self.string = self.process(self.statement, **compile_kwargs)
+  File "/home/airflow/.local/lib/python3.9/site-packages/sqlalchemy/sql/compiler.py", line 499, in process
+    return obj._compiler_dispatch(self, **kwargs)
+  File "/home/airflow/.local/lib/python3.9/site-packages/sqlalchemy/sql/visitors.py", line 82, in _compiler_dispatch
+    return meth(self, **kw)
+  File "/home/airflow/.local/lib/python3.9/site-packages/sqlalchemy/sql/compiler.py", line 3405, in visit_select
+    compile_state = select_stmt._compile_state_factory(
+  File "/home/airflow/.local/lib/python3.9/site-packages/sqlalchemy/sql/base.py", line 510, in create_for_statement
+    return klass.create_for_statement(statement, compiler, **kw)
+  File "/home/airflow/.local/lib/python3.9/site-packages/sqlalchemy/orm/context.py", line 765, in create_for_statement
+    self._setup_for_generate()
+  File "/home/airflow/.local/lib/python3.9/site-packages/sqlalchemy/orm/context.py", line 875, in _setup_for_generate
+    entity.setup_compile_state(self)
+  File "/home/airflow/.local/lib/python3.9/site-packages/sqlalchemy/orm/context.py", line 2661, in setup_compile_state
+    loading._setup_entity_query(
+  File "/home/airflow/.local/lib/python3.9/site-packages/sqlalchemy/orm/loading.py", line 612, in _setup_entity_query
+    value.setup(
+  File "/home/airflow/.local/lib/python3.9/site-packages/sqlalchemy/orm/interfaces.py", line 646, in setup
+    strat.setup_query(
+  File "/home/airflow/.local/lib/python3.9/site-packages/sqlalchemy/orm/strategies.py", line 2030, in setup_query
+    loading._setup_entity_query(
+  File "/home/airflow/.local/lib/python3.9/site-packages/sqlalchemy/orm/loading.py", line 612, in _setup_entity_query
+    value.setup(
+  File "/home/airflow/.local/lib/python3.9/site-packages/sqlalchemy/orm/interfaces.py", line 641, in setup
+    loader = self._get_context_loader(context, path)
+  File "/home/airflow/.local/lib/python3.9/site-packages/sqlalchemy/orm/interfaces.py", line 615, in _get_context_loader
+    for path_key in (
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/taskinstance.py", line 1542, in signal_handler
+    raise AirflowException("Task received SIGTERM signal")
+airflow.exceptions.AirflowException: Task received SIGTERM signal
+[2023-09-22T16:52:46.533+0000] {taskinstance.py:1368} INFO - Marking task as UP_FOR_RETRY. dag_id=dag_with_taskflow_api_v02, task_id=greet, execution_date=20211118T000000, start_date=20230922T165240, end_date=20230922T165246
+[2023-09-22T16:52:46.577+0000] {standard_task_runner.py:104} ERROR - Failed to execute job 163 for task greet (Task received SIGTERM signal; 625)
+[2023-09-22T16:52:46.714+0000] {process_utils.py:79} INFO - Process psutil.Process(pid=625, status='terminated', exitcode=1, started='16:52:39') (625) terminated with exit code 1
+[2023-09-22T16:52:46.745+0000] {local_task_job_runner.py:232} INFO - Task exited with return code 143
+[2023-09-22T16:52:47.882+0000] {taskinstance.py:2674} INFO - 0 downstream tasks scheduled from follow-on schedule check

@@ -1,0 +1,17 @@
+[2023-09-22T16:52:08.855+0000] {logging_mixin.py:149} WARNING - /home/***/.local/lib/python3.9/site-packages/***/utils/sqlalchemy.py:124 DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+[2023-09-22T16:52:09.025+0000] {taskinstance.py:1125} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: dag_with_taskflow_api_v02.greet__1 scheduled__2021-11-06T00:00:00+00:00 [queued]>
+[2023-09-22T16:52:09.060+0000] {taskinstance.py:1125} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: dag_with_taskflow_api_v02.greet__1 scheduled__2021-11-06T00:00:00+00:00 [queued]>
+[2023-09-22T16:52:09.062+0000] {taskinstance.py:1331} INFO - Starting attempt 1 of 6
+[2023-09-22T16:52:09.080+0000] {taskinstance.py:1350} INFO - Executing <Task(_PythonDecoratedOperator): greet__1> on 2021-11-06 00:00:00+00:00
+[2023-09-22T16:52:09.086+0000] {standard_task_runner.py:57} INFO - Started process 425 to run task
+[2023-09-22T16:52:09.121+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'dag_with_taskflow_api_v02', 'greet__1', 'scheduled__2021-11-06T00:00:00+00:00', '--job-id', '82', '--raw', '--subdir', 'DAGS_FOLDER/test2.py', '--cfg-path', '/tmp/tmpd5xdigtn']
+[2023-09-22T16:52:09.127+0000] {standard_task_runner.py:85} INFO - Job 82: Subtask greet__1
+[2023-09-22T16:52:09.156+0000] {logging_mixin.py:149} WARNING - /home/***/.local/lib/python3.9/site-packages/***/settings.py:188 DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+[2023-09-22T16:52:09.217+0000] {task_command.py:410} INFO - Running <TaskInstance: dag_with_taskflow_api_v02.greet__1 scheduled__2021-11-06T00:00:00+00:00 [running]> on host 75cee4990e54
+[2023-09-22T16:52:09.244+0000] {logging_mixin.py:149} WARNING - /home/***/.local/lib/python3.9/site-packages/***/utils/sqlalchemy.py:124 DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+[2023-09-22T16:52:09.742+0000] {taskinstance.py:1568} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='coder2j' AIRFLOW_CTX_DAG_ID='dag_with_taskflow_api_v02' AIRFLOW_CTX_TASK_ID='greet__1' AIRFLOW_CTX_EXECUTION_DATE='2021-11-06T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2021-11-06T00:00:00+00:00'
+[2023-09-22T16:52:09.745+0000] {logging_mixin.py:149} INFO - Hello World! My name is Jerry Fridman and I am 19 years old!
+[2023-09-22T16:52:09.746+0000] {python.py:183} INFO - Done. Returned value was: None
+[2023-09-22T16:52:09.767+0000] {taskinstance.py:1368} INFO - Marking task as SUCCESS. dag_id=dag_with_taskflow_api_v02, task_id=greet__1, execution_date=20211106T000000, start_date=20230922T165209, end_date=20230922T165209
+[2023-09-22T16:52:09.847+0000] {local_task_job_runner.py:232} INFO - Task exited with return code 0
+[2023-09-22T16:52:09.873+0000] {taskinstance.py:2674} INFO - 0 downstream tasks scheduled from follow-on schedule check

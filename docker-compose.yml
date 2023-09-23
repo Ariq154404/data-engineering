@@ -30,6 +30,7 @@ services:
       - confluent
     depends_on:
       - postgres
+      - cassandra_db
 
   scheduler:
     image: apache/airflow:2.6.0-python3.9

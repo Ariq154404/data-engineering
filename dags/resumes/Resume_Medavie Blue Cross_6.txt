@@ -1,0 +1,77 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{enumitem}
+\usepackage{hyperref}
+
+\title{Resume}
+\author{Ariq Rahman}
+\date{}
+
+\begin{document}
+
+\maketitle
+
+\section{Contact Details}
+\begin{itemize}
+    \item Mobile Number: \textbf{4373660580}
+    \item Address: \textbf{3 Calumet Crescent, M1H 1W4}
+\end{itemize}
+
+\section{Education}
+\begin{itemize}
+    \item Master of Applied Computing in Artificial Intelligence Stream, University of Windsor, Windsor, Ontario, May 2022 - August 2023
+    \item Bachelor of Science in Computer Science and Engineering, Islamic University of Technology, Dhaka, Bangladesh, January 2016 - November 2019
+\end{itemize}
+
+\section{Work Experience}
+\subsection{Data Analytics Intern, TD Bank of Canada, April 2023 - August 2023}
+\begin{itemize}
+    \item Developed Python Selenium script to automate ServiceNow queries and download files, reducing manual effort and improving efficiency by \textbf{40\%}.
+    \item Created dashboards in PowerBI using optimized Power Query for ETL process, resulting in faster query execution time.
+\end{itemize}
+
+\subsection{Artificial Intelligence Engineer, Intelligent Machines, September 2021 - April 2022}
+\begin{itemize}
+    \item Collaborated with a team of 5 members on a handwritten text recognition project for Unilever Bangladesh.
+    \item Performed data analysis, data visualization, and feature engineering using Python libraries such as \textbf{NumPy}, \textbf{Pandas}, and \textbf{Matplotlib} in Azure Databricks cluster.
+    \item Trained deep learning classification models using \textbf{TensorFlow} and \textbf{Keras} in Azure Databricks, resulting in a \textbf{260\%} improvement in Unilever's customer conversion target.
+    \item Designed and programmed an algorithm in Python using \textbf{NumPy} data structure to optimize sound matching time by \textbf{300\%} over basic algorithm.
+\end{itemize}
+
+\section{Personal Projects}
+\subsection{MLops on AWS}
+\begin{itemize}
+    \item Implemented MLops on AWS SageMaker for climate change tweet classification using the Kaggle dataset.
+    \item Preprocessed the data, performed label encoding, and used the Roberta model for tokenization.
+    \item Trained the Roberta model using supervised learning and stored the model in the feature store.
+    \item Utilized Python libraries such as \textbf{scikit-learn}, \textbf{transformers}, \textbf{numpy}, \textbf{pandas}, \textbf{tensorflow}, \textbf{argparse}, and \textbf{boto3}.
+\end{itemize}
+
+\subsection{A/B Testing on Questionnaire Dataset}
+\begin{itemize}
+    \item Conducted A/B testing on a questionnaire dataset from Kaggle to analyze people's response to buying products.
+    \item Calculated the p-value for the A/B testing using Python libraries such as \textbf{numpy}, \textbf{pandas}, \textbf{scipy}, \textbf{seaborn}, \textbf{matplotlib}, \textbf{math}, and \textbf{statsmodel}.
+\end{itemize}
+
+\subsection{Climate Change Tweet Classification}
+\begin{itemize}
+    \item Trained three models (BERT, Roberta, and Google Flan T5) for climate change tweet classification.
+    \item Conducted hyperparameter tuning and exploratory data analysis.
+    \item Tracked the experiment in the Wandb Mlops platform using Python libraries such as \textbf{numpy}, \textbf{pandas}, \textbf{seaborn}, \textbf{matplotlib}, \textbf{spacy}, \textbf{nlkt}, \textbf{geopy}, \textbf{geopandas}, \textbf{tensorflow}, \textbf{huggingface}, \textbf{scikit-learn}, and \textbf{keras tuner}.
+\end{itemize}
+
+\subsection{Movie Recommendation on AWS}
+\begin{itemize}
+    \item Developed a movie recommendation system based on the IMDB dataset using AWS technologies.
+    \item Implemented a semantic search algorithm to recommend movies based on user input.
+    \item Utilized AWS OpenSearch for storing movie descriptions as embeddings and AWS Lambda for retrieving recommended movie titles.
+    \item Created a data analysis pipeline on AWS using AWS Glue, AWS Athena, and AWS QuickSight.
+\end{itemize}
+
+\section{Certifications}
+\begin{itemize}
+    \item \textbf{TensorFlow Developer Certification}
+    \item \textbf{Azure Associate Data Scientist Certification (DP-100)}
+\end{itemize}
+
+\end{document}Link to apply job :https://www.careerbeacon.com/en/job/1923733/medavie-blue-cross/group-underwriting-data-analyst/quebec-city-qc

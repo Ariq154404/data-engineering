@@ -1,0 +1,36 @@
+[2023-09-22T21:17:02.879+0000] {taskinstance.py:1125} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: job_extraction_with_task_flow.etl_job_extraction_for_all_job manual__2023-09-22T21:16:59.262393+00:00 [queued]>
+[2023-09-22T21:17:02.885+0000] {taskinstance.py:1125} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: job_extraction_with_task_flow.etl_job_extraction_for_all_job manual__2023-09-22T21:16:59.262393+00:00 [queued]>
+[2023-09-22T21:17:02.886+0000] {taskinstance.py:1331} INFO - Starting attempt 1 of 2
+[2023-09-22T21:17:02.894+0000] {taskinstance.py:1350} INFO - Executing <Task(_PythonDecoratedOperator): etl_job_extraction_for_all_job> on 2023-09-22 21:16:59.262393+00:00
+[2023-09-22T21:17:02.898+0000] {standard_task_runner.py:57} INFO - Started process 235 to run task
+[2023-09-22T21:17:02.901+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'job_extraction_with_task_flow', 'etl_job_extraction_for_all_job', 'manual__2023-09-22T21:16:59.262393+00:00', '--job-id', '2', '--raw', '--subdir', 'DAGS_FOLDER/test3.py', '--cfg-path', '/tmp/tmp6gjqimnu']
+[2023-09-22T21:17:02.904+0000] {standard_task_runner.py:85} INFO - Job 2: Subtask etl_job_extraction_for_all_job
+[2023-09-22T21:17:02.915+0000] {logging_mixin.py:149} WARNING - /home/***/.local/lib/python3.9/site-packages/***/settings.py:188 DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+[2023-09-22T21:17:02.943+0000] {task_command.py:410} INFO - Running <TaskInstance: job_extraction_with_task_flow.etl_job_extraction_for_all_job manual__2023-09-22T21:16:59.262393+00:00 [running]> on host 97548fc890eb
+[2023-09-22T21:17:03.013+0000] {taskinstance.py:1568} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='job_extraction_with_task_flow' AIRFLOW_CTX_TASK_ID='etl_job_extraction_for_all_job' AIRFLOW_CTX_EXECUTION_DATE='2023-09-22T21:16:59.262393+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2023-09-22T21:16:59.262393+00:00'
+[2023-09-22T21:17:03.020+0000] {database.py:12} WARNING - Cluster.__init__ called with contact_points specified, but no load_balancing_policy. In the next major version, this will raise an error; please specify a load-balancing policy. (contact_points = ['cassandra_db'], lbp = None)
+[2023-09-22T21:17:03.084+0000] {database.py:13} WARNING - Downgrading core protocol version from 66 to 65 for 172.24.0.3:9042. To avoid this, it is best practice to explicitly set Cluster(protocol_version) to the version supported by your cluster. http://datastax.github.io/python-driver/api/cassandra/cluster.html#cassandra.cluster.Cluster.protocol_version
+[2023-09-22T21:17:03.088+0000] {database.py:13} WARNING - Downgrading core protocol version from 65 to 5 for 172.24.0.3:9042. To avoid this, it is best practice to explicitly set Cluster(protocol_version) to the version supported by your cluster. http://datastax.github.io/python-driver/api/cassandra/cluster.html#cassandra.cluster.Cluster.protocol_version
+[2023-09-22T21:17:03.351+0000] {policies.py:289} INFO - Using datacenter 'datacenter1' for DCAwareRoundRobinPolicy (via host '172.24.0.3:9042'); if incorrect, please specify a local_dc to the constructor, or limit contact points to local cluster nodes
+[2023-09-22T21:17:03.478+0000] {logging_mixin.py:149} INFO - Created Keyspace
+[2023-09-22T21:17:03.591+0000] {logging_mixin.py:149} INFO - Created Schema
+[2023-09-22T21:17:03.593+0000] {logging_mixin.py:149} INFO - Database creation DONE
+[2023-09-22T21:17:03.594+0000] {taskinstance.py:1847} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/decorators/base.py", line 220, in execute
+    return_value = super().execute(context)
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/operators/python.py", line 181, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/operators/python.py", line 198, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/test3.py", line 74, in etl_job_extraction_for_all_job
+    extract_result_for_jobs(v)
+  File "/opt/airflow/dags/test3.py", line 101, in extract_result_for_jobs
+    jobs= get_api_data()
+  File "/opt/airflow/dags/test3.py", line 87, in get_api_data
+    jobs= jsearch.fetch_job_description(job_title + "in Canada")
+NameError: name 'job_title' is not defined
+[2023-09-22T21:17:03.607+0000] {taskinstance.py:1368} INFO - Marking task as UP_FOR_RETRY. dag_id=job_extraction_with_task_flow, task_id=etl_job_extraction_for_all_job, execution_date=20230922T211659, start_date=20230922T211702, end_date=20230922T211703
+[2023-09-22T21:17:03.624+0000] {standard_task_runner.py:104} ERROR - Failed to execute job 2 for task etl_job_extraction_for_all_job (name 'job_title' is not defined; 235)
+[2023-09-22T21:17:03.678+0000] {local_task_job_runner.py:232} INFO - Task exited with return code 1
+[2023-09-22T21:17:03.692+0000] {taskinstance.py:2674} INFO - 0 downstream tasks scheduled from follow-on schedule check

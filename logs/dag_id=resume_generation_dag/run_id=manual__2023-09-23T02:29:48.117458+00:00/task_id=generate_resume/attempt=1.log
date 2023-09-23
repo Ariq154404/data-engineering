@@ -1,0 +1,26 @@
+[2023-09-23T02:29:51.669+0000] {taskinstance.py:1125} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: resume_generation_dag.generate_resume manual__2023-09-23T02:29:48.117458+00:00 [queued]>
+[2023-09-23T02:29:51.676+0000] {taskinstance.py:1125} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: resume_generation_dag.generate_resume manual__2023-09-23T02:29:48.117458+00:00 [queued]>
+[2023-09-23T02:29:51.677+0000] {taskinstance.py:1331} INFO - Starting attempt 1 of 1
+[2023-09-23T02:29:51.685+0000] {taskinstance.py:1350} INFO - Executing <Task(_PythonDecoratedOperator): generate_resume> on 2023-09-23 02:29:48.117458+00:00
+[2023-09-23T02:29:51.689+0000] {standard_task_runner.py:57} INFO - Started process 648 to run task
+[2023-09-23T02:29:51.691+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'resume_generation_dag', 'generate_resume', 'manual__2023-09-23T02:29:48.117458+00:00', '--job-id', '7', '--raw', '--subdir', 'DAGS_FOLDER/resume_generation.py', '--cfg-path', '/tmp/tmp_z6ion07']
+[2023-09-23T02:29:51.694+0000] {standard_task_runner.py:85} INFO - Job 7: Subtask generate_resume
+[2023-09-23T02:29:51.705+0000] {logging_mixin.py:149} WARNING - /home/***/.local/lib/python3.9/site-packages/***/settings.py:188 DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+[2023-09-23T02:29:51.732+0000] {task_command.py:410} INFO - Running <TaskInstance: resume_generation_dag.generate_resume manual__2023-09-23T02:29:48.117458+00:00 [running]> on host 51d1724a3329
+[2023-09-23T02:29:51.788+0000] {taskinstance.py:1568} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='resume_generation_dag' AIRFLOW_CTX_TASK_ID='generate_resume' AIRFLOW_CTX_EXECUTION_DATE='2023-09-23T02:29:48.117458+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2023-09-23T02:29:48.117458+00:00'
+[2023-09-23T02:30:17.974+0000] {logging_mixin.py:149} INFO - FULL_PATH
+[2023-09-23T02:30:17.978+0000] {logging_mixin.py:149} INFO - /opt/***/dags/resumes/Resume_Meta_1.txt
+[2023-09-23T02:30:33.861+0000] {logging_mixin.py:149} INFO - FULL_PATH
+[2023-09-23T02:30:33.867+0000] {logging_mixin.py:149} INFO - /opt/***/dags/resumes/Resume_Staples_2.txt
+[2023-09-23T02:30:54.074+0000] {logging_mixin.py:149} INFO - FULL_PATH
+[2023-09-23T02:30:54.080+0000] {logging_mixin.py:149} INFO - /opt/***/dags/resumes/Resume_Shorewise Consulting_3.txt
+[2023-09-23T02:31:13.690+0000] {logging_mixin.py:149} INFO - FULL_PATH
+[2023-09-23T02:31:13.694+0000] {logging_mixin.py:149} INFO - /opt/***/dags/resumes/Resume_Arc'teryx Equipment_4.txt
+[2023-09-23T02:31:32.742+0000] {logging_mixin.py:149} INFO - FULL_PATH
+[2023-09-23T02:31:32.749+0000] {logging_mixin.py:149} INFO - /opt/***/dags/resumes/Resume_Insight_5.txt
+[2023-09-23T02:32:02.427+0000] {logging_mixin.py:149} INFO - FULL_PATH
+[2023-09-23T02:32:02.430+0000] {logging_mixin.py:149} INFO - /opt/***/dags/resumes/Resume_Medavie Blue Cross_6.txt
+[2023-09-23T02:32:02.450+0000] {python.py:183} INFO - Done. Returned value was: None
+[2023-09-23T02:32:02.466+0000] {taskinstance.py:1368} INFO - Marking task as SUCCESS. dag_id=resume_generation_dag, task_id=generate_resume, execution_date=20230923T022948, start_date=20230923T022951, end_date=20230923T023202
+[2023-09-23T02:32:02.520+0000] {local_task_job_runner.py:232} INFO - Task exited with return code 0
+[2023-09-23T02:32:02.532+0000] {taskinstance.py:2674} INFO - 0 downstream tasks scheduled from follow-on schedule check
