@@ -64,7 +64,7 @@ class CassandraSessions:
         query = """
         SELECT * FROM job_details WHERE job_posted_at_datetime_utc > %s ALLOW FILTERING;
         """
-        one_day_ago = datetime.utcnow() - timedelta(days=3)
+        one_day_ago = datetime.utcnow() - timedelta(days=1)
         print(one_day_ago)
         #print("SS",SimpleStatement(query, (one_day_ago,)))
         rows = self.session.execute(query, [one_day_ago])
