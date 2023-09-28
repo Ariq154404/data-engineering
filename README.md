@@ -23,7 +23,11 @@ Airflow webserver and cassandra are run as background servers.
 
 ![Airflow UI](https://github.com/Ariq154404/data-engineering/blob/main/pipelin_resumegen.png)
 
+The diagram above shows the UI of airflow
+
 ![Sample Airflow ETL ](https://github.com/Ariq154404/data-engineering/blob/main/ETL_for_keyword_extraction.png)
+
+The diagram above shows sample ETL DAG in airflow
 
 ![Sample Resume ](https://github.com/Ariq154404/data-engineering/blob/main/sample_resume.png)
 
