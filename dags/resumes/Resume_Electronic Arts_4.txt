@@ -1,0 +1,64 @@
+\documentclass{resume}
+
+\begin{document}
+
+\begin{center}
+  \textbf{\LARGE Ariq Rahman}
+\end{center}
+
+\begin{center}
+  \begin{tabular}{c c c}
+    \textbf{Mobile:} 4373660580 & \textbf{Address:} 3 Calumet Crescent, M1H 1W4 \\
+  \end{tabular}
+\end{center}
+
+\section{Education}
+\textbf{Master of Applied Computing (Artificial Intelligence Stream)} \\
+University of Windsor, Ontario (May 2022-August 2023) \\
+
+\textbf{Bachelor of Science in Computer Science and Engineering} \\
+Islamic University of Technology, Dhaka, Bangladesh (January 2016-November 2019) \\
+
+\section{Work Experience}
+\textbf{Data Analytics Intern} \\
+TD Bank of Canada (April-August 2023) \\
+- Automated Service Now queries and file downloads using Python Selenium script \\
+- Created dashboards in PowerBI and optimized power query for ETL \\
+
+\textbf{AI Engineer} \\
+Intelligent Machines (Sept 2021-April 2022) \\
+- Worked on a handwritten text recognition project for Unilever Bangladesh \\
+- Performed data analysis, data visualization, and feature engineering on image data \\
+- Coded and trained a deep learning model \\
+- Deployed the model as a Docker TensorFlow Serving for batch analysis \\
+
+\section{Certifications}
+\textbf{TensorFlow Developer Certification} \\
+\textbf{Azure Associate Data Scientist Certification (DP-100)} \\
+
+\section{Personal Projects}
+\textbf{A/B Testing on Questionnaire Dataset} \\
+- Conducted A/B testing on a dataset gauging people's response to buying products \\
+- Calculated the p-value for the test using Python libraries like NumPy, Pandas, SciPy, Seaborn, Matplotlib, Math, and Statsmodels \\
+
+\textbf{Climate Change Tweet Classification} \\
+- Worked on a dataset about climate change tweets \\
+- Trained three models (BERT, RoBERTa, and Google Flan T5) \\
+- Performed hyperparameter tuning and Exploratory Data Analysis (EDA) \\
+- Tracked the experiment on the Wandb Mlops platform \\
+
+\textbf{Movie Recommendation on AWS} \\
+- Worked on a movie recommendation system based on the IMDB dataset \\
+- Created a data analysis pipeline on AWS using AWS Glue, AWS Athena, and AWS Quicksight \\
+
+\textbf{Software Engineering Project} \\
+- Collaborated with classmates on a project to locate water fountains at the University of Windsor \\
+- Coded the backend, implemented design patterns, created Flask-based APIs \\
+- Deployed the API on Heroku \\
+
+\section{Skills}
+\textbf{Data Analysis, Data Visualization, Statistical Modeling} \\
+\textbf{Python, NumPy, Pandas, SciPy, Seaborn, Matplotlib, Math, Statsmodels} \\
+\textbf{TensorFlow, Azure Data Science} \\
+
+\end{document}Link to apply job :https://ca.bebee.com/job/20230927-8e43cea3b358ec70d6ea796e3fd97ca1

@@ -9,6 +9,7 @@ from langchain.callbacks.manager import CallbackManagerForLLMRun
 from langchain.chat_models import ChatOpenAI
 from getpass import getpass
 from jobportal import Jsearch
+from job_types import JobTags
 from langchain.document_loaders import TextLoader
 from database import CassandraSessions
 from airflow import DAG
@@ -43,9 +44,9 @@ def extract_keyword(jd,llm):
     chain = create_extraction_chain(schema, llm)
     val=chain.run(jd)
     return val
-def get_api_data(job_title):
+def get_api_data(job_title,tag):
     jsearch = Jsearch()
-    jobs= jsearch.fetch_job_description(job_title + "in Canada")
+    jobs= jsearch.fetch_job_description(job_title + "in Canada",tag)
     return jobs
 
     # last_day_job=cassandra_manager.retrieve_jobs_last_day()
@@ -63,7 +64,7 @@ def load_llm(model_name):
         load_dotenv()
     #os.environ.get('openai_key') 
         llm=ChatOpenAI(model=model_name,temperature = 0,
-                          openai_api_key = ,         
+                          openai_api_key =  ,         
                           max_tokens=3000                 
                          ) 
         return llm
@@ -79,10 +80,12 @@ def start_etl():
 
     @task(multiple_outputs=True)
     def get_jobs_from_api():
-        lst=['Machine learning',"Data Science","Software Engineer","Python Developer","Data Engineer"]
+        job_tags=JobTags()
+        jtags=job_tags.get_tags()
+        #lst=['Machine learning',"Data Science","Software Engineer","Python Developer","Data Engineer"]
         nlst=[]
-        for v in lst:
-            nlst+=get_api_data(v)
+        for v in jtags:
+            nlst+=get_api_data(jtags[v],v)
         print("ALL JOBS",nlst)
         return {'jobs':nlst}
 
@@ -91,6 +94,7 @@ def start_etl():
         print("Results",results)
         cassandra_manager=CassandraSessions(keyspace='job_data')
         for v in results:
+            print("TAAAAG",v['tag'])
             cassandra_manager.insert_job_data(v)
     @task(multiple_outputs=True)
     def extract_keywords_from_jobs(jobs):

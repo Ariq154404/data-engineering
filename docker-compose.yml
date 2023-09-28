@@ -1,5 +1,4 @@
 version: '3'
-
 services:
   webserver:
     image: apache/airflow:2.6.0-python3.9
@@ -72,7 +71,7 @@ services:
     container_name: cassandra
     hostname: cassandra
     ports:
-      - "9042:9042"
+      - "9043:9043"
     environment:
       - MAX_HEAP_SIZE=512M
       - HEAP_NEWSIZE=100M

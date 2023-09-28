@@ -1,0 +1,74 @@
+\documentclass{article}
+\usepackage[margin=1in]{geometry}
+
+\begin{document}
+
+\begin{center}
+\textbf{\Large Ariq Rahman}
+\end{center}
+
+\section*{Contact Information}
+\begin{itemize}
+\item \textbf{Mobile:} 4373660580
+\item \textbf{Address:} 3 Calumet Crescent, M1H 1W4
+\end{itemize}
+
+\section*{Education}
+\begin{itemize}
+\item \textbf{Master of Applied Computing (Artificial Intelligence Stream)}, University of Windsor, Ontario (May 2022-August 2023)
+\item \textbf{Bachelor of Science in Computer Science and Engineering}, Islamic University of Technology, Dhaka, Bangladesh (January 2016-November 2019)
+\end{itemize}
+
+\section*{Work Experience}
+\begin{itemize}
+\item \textbf{Data Analytics Intern}, TD Bank of Canada (April-August 2023)
+\begin{itemize}
+\item Automated service now queries and downloaded files as part of the ETL process using a Python selenium script.
+\item Created dashboards in PowerBI and optimized power query for ETL.
+\end{itemize}
+
+\item \textbf{AI Engineer}, Intelligent Machines (Sept 2021-April 2022)
+\begin{itemize}
+\item Worked on a handwritten text recognition project for Unilever Bangladesh.
+\item Performed data analysis, data visualization, and feature engineering on image data.
+\item Coded and trained a deep learning model and deployed the model as a Docker TensorFlow Serving for batch analysis.
+\end{itemize}
+
+\end{itemize}
+
+\section*{Certifications}
+\begin{itemize}
+\item \textbf{TensorFlow Developer Certification}
+\item \textbf{Azure Associate Data Scientist Certification (DP-100)}
+\end{itemize}
+
+\section*{Personal Projects}
+\begin{itemize}
+\item \textbf{A/B testing on questionnaire dataset}
+\begin{itemize}
+\item Conducted A/B testing on a dataset that gauged people's response to buying products.
+\item Calculated the p-value for the test using Python libraries like numpy, pandas, scipy, seaborn, matplotlib, math, and statsmodel.
+\end{itemize}
+
+\item \textbf{Climate Change tweet classification}
+\begin{itemize}
+\item Worked on a dataset about climate change tweets.
+\item Trained three models (BERT, RoBERTa, and Google Flan T5) and performed hyperparameter tuning and Exploratory Data Analysis (EDA).
+\item Tracked the experiment on the Wandb Mlops platform.
+\end{itemize}
+
+\item \textbf{Movie recommendation on AWS}
+\begin{itemize}
+\item Worked on a movie recommendation system based on the IMDB dataset.
+\item Created a data analysis pipeline on AWS using AWS Glue, AWS Athena, and AWS Quicksight.
+\end{itemize}
+
+\item \textbf{Software Engineering project}
+\begin{itemize}
+\item Collaborated with classmates on a project to locate water fountains at the University of Windsor.
+\item Coded the backend, implemented design patterns, created Flask-based APIs, and deployed the API on Heroku.
+\end{itemize}
+
+\end{itemize}
+
+\end{document}Link to apply job :https://ca.linkedin.com/jobs/view/full-time-data-analyst-remote-at-workafy-3727521438

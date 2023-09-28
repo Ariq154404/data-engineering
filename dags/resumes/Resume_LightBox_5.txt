@@ -1,0 +1,53 @@
+\documentclass{resume}
+
+\begin{document}
+
+\section{Contact Information}
+\textbf{Mobile:} 4373660580 \\
+\textbf{Address:} 3 Calumet Crescent, M1H 1W4
+
+\section{Education}
+\textbf{Master of Applied Computing, Artificial Intelligence Stream} \\
+University of Windsor, Windsor, Ontario (May 2022 - August 2023)
+
+\textbf{Bachelor of Science in Computer Science and Engineering} \\
+Islamic University of Technology, Dhaka, Bangladesh (January 2016 - November 2019)
+
+\section{Work Experience}
+\textbf{Data Analytics Intern} at TD Bank of Canada (April - August 2023) \\
+- Developed Python Selenium script to automate ServiceNow queries and download files for ETL processes.\\
+- Created dashboards in PowerBI using optimized PowerQuery for ETL process.
+
+\textbf{Artificial Intelligence Engineer} at Intelligent Machines (Sept 2021 - April 2022) \\
+- Worked on a handwritten text recognition project for Unilever Bangladesh.\\
+- Performed data analysis, data visualization, and feature engineering on over 700 GB of image data.\\
+- Used Python libraries such as Numpy, Pandas, and Matplotlib in Azure Databricks cluster.\\
+- Deployed deep learning model as Docker TensorFlow Serving for batch analysis.
+
+\section{Personal Projects}
+\textbf{MLops on AWS} \\
+- Developed a Machine Learning Operations (MLOps) pipeline on AWS using SageMaker.\\
+- Utilized a Kaggle dataset containing tweets about climate change.\\
+- Performed data preprocessing, label encoding, and tokenization with the Roberta model.\\
+- Stored the data in AWS feature stores for training and testing.
+
+\textbf{A/B Testing on Questionnaire Dataset} \\
+- Conducted A/B testing on a survey dataset, evaluating responses to product purchases from control and exposed groups.\\
+- Calculated the p-value for the A/B testing using Python libraries such as Numpy, Pandas, and Scipy.
+
+\textbf{AWS Orchestration of Bitcoin Forecast} \\
+- Orchestrated multiple notebooks to forecast Bitcoin prices using AWS Event Bridge.\\
+- Each stage of the pipeline triggered the next stage via AWS SageMaker.\\
+- Executed notebooks from AWS Lambda functions using Boto3, Sagemaker, and other libraries.
+
+\textbf{Data Engineering with Large Language Model (LLM)} \\
+- Automated tailoring of resumes using a large language model (LLM).\\
+- Created an ETL DAG using Apache Airflow to extract job descriptions.\\
+- Filtered out keywords using LLM and stored the extracted keywords in a Cassandra data model.\\
+- Retrieved job with keyword skills and churned tailored resumes.
+
+\section{Certifications}
+\textbf{TensorFlow Developer Certification} \\
+\textbf{Azure Associate Data Scientist (DP-100) Certification}
+
+\end{document}Link to apply job :https://ca.linkedin.com/jobs/view/data-engineer-at-lightbox-3726215111

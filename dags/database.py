@@ -34,6 +34,7 @@ class CassandraSessions:
             job_apply_link TEXT,
             job_description TEXT,
             job_posted_at_timestamp BIGINT,
+            job_tag TEXT,
             skills LIST<TEXT>,
             PRIMARY KEY (job_title, job_posted_at_datetime_utc)
         );
@@ -45,8 +46,8 @@ class CassandraSessions:
         job_datetime = datetime.fromisoformat(job_data['job_posted_at_datetime_utc'].replace('Z', '+00:00'))
         query = """
         INSERT INTO job_details (job_title, job_posted_at_datetime_utc, employer_name, job_employment_type, 
-                                 job_apply_link, job_description, job_posted_at_timestamp, skills)
-        VALUES (%s, %s, %s, %s, %s, %s, %s, %s);
+                                 job_apply_link, job_description, job_posted_at_timestamp, job_tag, skills)
+        VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s);
         """
         self.session.execute(query, (job_data['job_title'], 
                                      job_datetime,
@@ -54,7 +55,8 @@ class CassandraSessions:
                                      job_data['job_employment_type'], 
                                      job_data['job_apply_link'], 
                                      job_data['job_description'], 
-                                     job_data['job_posted_at_timestamp'], 
+                                     job_data['job_posted_at_timestamp'],
+                                     job_data['tag'], 
                                      job_data['skills']))
         print("Inserted data")
 

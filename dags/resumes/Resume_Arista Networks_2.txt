@@ -1,0 +1,60 @@
+\documentclass{resume}
+
+\begin{document}
+
+\header{Ariq Rahman}{Software Engineer}
+
+\section{Contact Information}
+\begin{itemize}
+  \item Mobile: 4373660580
+  \item Address: 3 Calumet Crescent, M1H 1W4
+\end{itemize}
+
+\section{Education}
+\begin{itemize}
+  \item \textbf{Master of Applied Computing, Artificial Intelligence Stream} \\
+  University of Windsor, Windsor, Ontario (May 2022-August 2023)
+  
+  \item \textbf{Bachelor of Science in Computer Science and Engineering} \\
+  Islamic University of Technology, Dhaka, Bangladesh (January 2016-November 2019)
+\end{itemize}
+
+\section{Work Experience}
+\begin{itemize}
+  \item \textbf{Data Analytics Intern at TD Bank of Canada} (April-August 2023) \\
+  - Developed a Python Selenium script to automate ServiceNow queries and download files \\
+  - Created optimized Power BI dashboards and data models
+
+  \item \textbf{Artificial Intelligence Engineer at Intelligent Machines} (Sept 2021-April 2022) \\
+  - Worked on projects including handwritten text recognition and sound matching \\
+  - Analyzed data, implemented deep learning algorithms, and optimized performance
+\end{itemize}
+
+\section{Personal Projects}
+\begin{itemize}
+  \item \textbf{Software Engineering Project at University of Windsor} \\
+  - Led a team of five in developing a system for locating water fountains \\
+  - Implemented design patterns and created APIs using Flask \\
+  - Deployed the project on Heroku and rigorously tested using Pytest
+
+  \item \textbf{Shell Scripting} \\
+  - Developed a Unix shell script to monitor user processes \\
+  - Automated process tree output using pstree -p
+  
+  \item \textbf{Django Project for Trekking} \\
+  - Built features for a trekking website using Django \\
+  - Implemented login, logout, and password recovery functionalities
+  
+  \item \textbf{AWS Orchestration of Bitcoin Forecast} \\
+  - Orchestrated multiple notebooks for forecasting bitcoin prices using AWS Event Bridge \\
+  - Ran notebooks on AWS SageMaker, triggering each stage with events
+  
+\end{itemize}
+
+\section{Certifications}
+\begin{itemize}
+  \item \textbf{TensorFlow Developer Certification}
+  \item \textbf{Azure Associate Data Scientist Certification (DP-100)}
+\end{itemize}
+
+\end{document}Link to apply job :https://ca.linkedin.com/jobs/view/software-engineer-at-arista-networks-3727903805
