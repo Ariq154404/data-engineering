@@ -1,6 +1,7 @@
 docker start ad11f31f727644dee31f52c3020498c61de6d1dacffa689eeee7aa3be1f311ca
 docker-compose up -d
 docker exec -it data-engineering_webserver_1  /bin/bash
+docker exec data-engineering_webserver_1 env
 python -m pip install --upgrade pip
 pip install -r requirements.txt
 airflow users create --username admin --firstname admin --lastname admin --role Admin --email ariq913@gmail.com --password admin

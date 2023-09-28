@@ -1,0 +1,70 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{enumitem}
+\usepackage[left=1.5in, right=1.5in, top=1in, bottom=1in]{geometry}
+
+\title{Ariq Rahman Resume}
+\date{}
+
+\begin{document}
+
+\maketitle
+
+\section{Contact Information}
+\textbf{Mobile:} 4373660580 \\
+\textbf{Address:} 3 Calumet Crescent, M1H 1W4
+
+\section{Education}
+\textbf{Master of Applied Computing}, Artificial Intelligence Stream \\
+University of Windsor, Windsor, Ontario (May 2022-August 2023)
+
+\textbf{Bachelor of Science in Computer Science and Engineering} \\
+Islamic University of Technology, Dhaka, Bangladesh (January 2016-November 2019)
+
+\section{Work Experience}
+
+\subsection{Data Analytics Intern at TD Bank of Canada (April-August 2023)}
+\begin{itemize}
+    \item Automated ServiceNow queries and downloads using Python Selenium script as part of the ETL process.
+    \item Created dashboards in PowerBI, using optimized PowerQuery for ETL process, and designed data models in PowerBI.
+\end{itemize}
+
+\subsection{Artificial Intelligence Engineer at Intelligent Machines (Sept 2021-April 2022)}
+\begin{itemize}
+    \item Worked on a handwritten text recognition project for Unilever Bangladesh and a sound matching project for Unilever Bangladesh.
+    \item Used Python, Numpy, Pandas, Matplotlib, Tensorflow, Keras, and Docker Tensorflow Serving.
+\end{itemize}
+
+\section{Personal Projects}
+\subsection{MLops on AWS}
+\begin{itemize}
+    \item Implemented MLops on AWS SageMaker, using Python libraries such as \textbf{sklearn}, \textbf{multiprocessing}, \textbf{transformer}, \textbf{numpy}, \textbf{pandas}, \textbf{tensorflow}, \textbf{argparse}, and \textbf{boto3}.
+    \item Developed a classification model using a Kaggle dataset of tweets about climate change to identify the sentiment of the tweets.
+\end{itemize}
+
+\subsection{A/B testing on questionnaire dataset}
+\begin{itemize}
+    \item Conducted A/B testing on a dataset from Kaggle, using Python libraries such as \textbf{numpy}, \textbf{pandas}, \textbf{scipy}, \textbf{seaborn}, \textbf{matplotlib}, \textbf{math}, and \textbf{statsmodel}.
+    \item Calculated the p-value for the A/B testing.
+\end{itemize}
+
+\subsection{Shell Script}
+\begin{itemize}
+    \item Wrote a Unix shell script to monitor all current user processes.
+    \item If any process had more than \textbf{n} descendants, the script would output the process tree with \textbf{p} as the root on the standard output using \textbf{pstree -p}.
+\end{itemize}
+
+\subsection{Software Engineering project}
+\begin{itemize}
+    \item Developed a system to locate water fountains at the University of Windsor as part of a team.
+    \item Coded the backend for the project, implemented various design patterns, created Flask-based APIs, and deployed the API on Heroku.
+    \item Wrote unit tests for different modules and conducted code coverage.
+\end{itemize}
+
+\section{Certifications}
+\begin{itemize}
+    \item \textbf{TensorFlow Developer Certification}
+    \item \textbf{Azure Associate Data Scientist Certification (DP-100)}
+\end{itemize}
+
+\end{document}Link to apply job :https://ca.talent.com/view?id=2d637f33a65b

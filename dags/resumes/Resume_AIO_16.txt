@@ -1,0 +1,59 @@
+\documentclass{resume}
+
+\begin{document}
+\header{Ariq Rahman}{Software Engineer}
+
+\contactinfo{Mobile: 4373660580}{Address: 3 Calumet Crescent, M1H 1W4}
+
+\section{Education}
+\textbf{Master of Applied Computing, Artificial Intelligence Stream} \\
+University of Windsor, Windsor, Ontario \\
+May 2022 - August 2023
+
+\textbf{Bachelor of Science in Computer Science and Engineering} \\
+Islamic University of Technology, Dhaka, Bangladesh \\
+January 2016 - November 2019
+
+\section{Work Experience}
+\textbf{Data Analytics Intern} \\
+TD Bank of Canada \\
+April 2023 - August 2023
+
+- Automated ServiceNow queries and downloads using \textbf{Python Selenium} script
+- Created dashboards in \textbf{PowerBI} using optimized PowerQuery for ETL process
+- Designed data models in \textbf{PowerBI}
+
+\textbf{Artificial Intelligence Engineer} \\
+Intelligent Machines \\
+September 2021 - April 2022
+
+- Worked on a handwritten text recognition project for Unilever Bangladesh using \textbf{Python}, \textbf{Numpy}, \textbf{Pandas}, \textbf{Matplotlib}, \textbf{Tensorflow}, \textbf{Keras}, and \textbf{Docker Tensorflow Serving}
+
+\section{Personal Projects}
+\textbf{MLops on AWS}
+
+- Implemented MLops on AWS SageMaker using Python libraries such as \textbf{sklearn}, \textbf{multiprocessing}, \textbf{transformer}, \textbf{numpy}, \textbf{pandas}, \textbf{tensorflow}, \textbf{argparse}, and \textbf{boto3}
+- Developed a classification model to identify the sentiment of tweets about climate change using a Kaggle dataset
+
+\textbf{A/B testing on questionnaire dataset}
+
+- Conducted A/B testing on a dataset from Kaggle using Python libraries such as \textbf{numpy}, \textbf{pandas}, \textbf{scipy}, \textbf{seaborn}, \textbf{matplotlib}, \textbf{math}, and \textbf{statsmodel}
+- Calculated the p-value for the A/B testing
+
+\textbf{Shell Script}
+
+- Wrote a Unix shell script to monitor all current user processes
+- Output the process tree with p as the root on the standard output using \textbf{pstree -p}
+
+\textbf{Software Engineering project}
+
+- Developed a system to locate water fountains at the University of Windsor
+- Coded the backend, implemented various design patterns, created Flask-based APIs, and deployed the API on Heroku
+- Wrote unit tests for different modules and conducted code coverage
+
+\section{Certifications}
+\textbf{TensorFlow Developer Certification}
+
+\textbf{Azure Associate Data Scientist Certification (DP-100)}
+
+\end{document}Link to apply job :https://ca.linkedin.com/jobs/view/senior-game-back-end-developer-at-aio-3726226925

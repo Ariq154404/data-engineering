@@ -17,7 +17,7 @@ from datetime import datetime
 from airflow.operators.python_operator import PythonOperator
 from airflow.decorators import dag, task
 
-def resume_gen(title,skills,company,link,cnt):
+def resume_gen(title,skills,company,link,job_tag,cnt):
     prompt = PromptTemplate(
     input_variables=["title", "skills","data"],
     template="""Information about Ariq:
@@ -39,7 +39,10 @@ Keyword skills:{skills}
     chain = LLMChain(llm=llm, prompt=prompt)
     # loader = TextLoader("test/myself.txt")
     # data=loader.load()
-    with open('/opt/airflow/dags/myself.txt', 'r') as file:
+    # with open('/opt/airflow/dags/myself.txt', 'r') as file:
+    #     data = file.read()
+    path='/opt/airflow/dags/filtered_info/'+job_tag+'.txt'
+    with open(path, 'r') as file:
         data = file.read()
     val=chain.run({
     'title': title,
@@ -58,9 +61,9 @@ Keyword skills:{skills}
 def load_llm(model_name):
         load_dotenv()
     #os.environ.get('openai_key') 
-        llm=ChatOpenAI(model=model_name,temperature = 0,
-                          openai_api_key = ,         
-                          max_tokens=5000                 
+        llm=ChatOpenAI(model=model_name,temperature = 0.85,
+                          openai_api_key = os.environ.get('openai_key') ,         
+                          max_tokens=10000                 
                          ) 
         return llm
 default_args = {
@@ -93,7 +96,7 @@ def start_etl():
         for v in result:
             for key in v:
                 v[key]=str(v[key])
-            resume_gen(v['job_title'],",".join(v["skills"]),v['employer_name'],v['job_apply_link'],cnt)
+            resume_gen(v['job_title'],",".join(v["skills"]),v['employer_name'],v['job_apply_link'],v['job_tag'],cnt)
             cnt+=1
             
 

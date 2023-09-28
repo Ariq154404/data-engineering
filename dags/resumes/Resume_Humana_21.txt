@@ -1,0 +1,62 @@
+\documentclass{resume}
+
+\begin{document}
+
+\section{Contact Information}
+\textbf{Ariq Rahman}\\
+Mobile: 4373660580\\
+Address: 3 Calumet Crescent, M1H 1W4
+
+\section{Education}
+\textbf{Master of Applied Computing}, Artificial Intelligence Stream\\
+University of Windsor, Windsor, Ontario (May 2022-August 2023)
+
+\textbf{Bachelor of Science in Computer Science and Engineering}\\
+Islamic University of Technology, Dhaka, Bangladesh (January 2016-November 2019)
+
+\section{Work Experience}
+\textbf{Data Analytics Intern}, TD Bank of Canada (April-August 2023)
+\begin{itemize}
+  \item Automated ServiceNow queries and downloaded files as part of the ETL process.
+  \item Created dashboards in PowerBI, utilizing optimized PowerQuery for ETL processes.
+  \item Developed data models in PowerBI for efficient data analysis.
+\end{itemize}
+
+\textbf{Artificial Intelligence Engineer}, Intelligent Machines (Sept 2021-April 2022)
+\begin{itemize}
+  \item Worked on a handwritten text recognition project for Unilever Bangladesh, performing data analysis, data visualization, feature engineering, and training deep learning classification models.
+  \item Designed and programmed an algorithm that optimized matching time by 300% for a sound matching project.
+\end{itemize}
+
+\section{Personal Projects}
+\textbf{MLops on AWS}
+\begin{itemize}
+  \item Implemented MLops on AWS SageMaker using a Kaggle dataset of tweets about climate change.
+  \item Performed data preprocessing, label encoding, and tokenization with the Roberta model.
+  \item Stored the model into a feature store and utilized Python libraries such as sklearn, multiprocessing, transformer, numpy, pandas, tensorflow, argparse, and boto3.
+\end{itemize}
+
+\textbf{A/B testing on questionnaire dataset}
+\begin{itemize}
+  \item Conducted A/B testing on a dataset from Kaggle, calculating the p-value for the test.
+  \item Utilized Python libraries including numpy, pandas, scipy, seaborn, matplotlib, math, and statsmodel.
+\end{itemize}
+
+\textbf{AWS orchestration of bit-coin forecast}
+\begin{itemize}
+  \item Used AWS Event Bridge to orchestrate multiple notebooks for forecasting bitcoin prices.
+  \item Ran the notebooks in AWS SageMaker, with each event triggering the next stage of the pipeline.
+  \item Utilized Python libraries such as boto3, sagemaker, pickle, matplotlib, and pandas.
+\end{itemize}
+
+\textbf{Data Engineering with llm}
+\begin{itemize}
+  \item Automated the tailoring of resumes using a large language model (llm).
+  \item Created an ETL DAG using Apache Airflow, extracted job descriptions, filtered out keywords using llm, created a data model in Cassandra, and stored the extracted keywords.
+\end{itemize}
+
+\section{Certifications}
+\textbf{TensorFlow Developer Certification}\\
+\textbf{Azure Associate Data Scientist Certification DP-100}
+
+\end{document}Link to apply job :https://ca.bebee.com/job/20230928-541355c4dcd84d6328a8fed34ea058a6
