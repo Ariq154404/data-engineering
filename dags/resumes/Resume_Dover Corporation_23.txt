@@ -1,0 +1,61 @@
+\documentclass{resume}
+
+\begin{document}
+
+\section*{Contact Information}
+\begin{itemize}
+  \item Mobile: \textbf{4373660580}
+  \item Address: \textbf{3 Calumet Crescent, M1H 1W4}
+\end{itemize}
+
+\section*{Education}
+\begin{itemize}
+  \item \textbf{Master of Applied Computing}, Artificial Intelligence Stream, University of Windsor, Windsor, Ontario (May 2022-August 2023)
+  \item \textbf{Bachelor of Science in Computer Science and Engineering}, Islamic University of Technology, Dhaka, Bangladesh (January 2016-November 2019)
+\end{itemize}
+
+\section*{Work Experience}
+\subsection*{Data Analytics Intern at TD Bank of Canada (April-August 2023)}
+\begin{itemize}
+  \item Automated ServiceNow queries and downloads using Python Selenium script as part of the ETL process.
+  \item Created dashboards in \textbf{PowerBI}, using optimized PowerQuery for ETL process, and designed data models in \textbf{PowerBI}.
+\end{itemize}
+
+\subsection*{Artificial Intelligence Engineer at Intelligent Machines (Sept 2021-April 2022)}
+\begin{itemize}
+  \item Worked on a handwritten text recognition project for Unilever Bangladesh and a sound matching project for Unilever Bangladesh.
+  \item Utilized \textbf{Python}, \textbf{Numpy}, \textbf{Pandas}, \textbf{Matplotlib}, \textbf{Tensorflow}, \textbf{Keras}, and \textbf{Docker Tensorflow Serving} for the projects.
+\end{itemize}
+
+\section*{Personal Projects}
+\subsection*{MLops on AWS}
+\begin{itemize}
+  \item Implemented MLops on AWS SageMaker, using Python libraries such as \textbf{sklearn}, \textbf{multiprocessing}, \textbf{transformer}, \textbf{numpy}, \textbf{pandas}, \textbf{tensorflow}, \textbf{argparse}, and \textbf{boto3}.
+  \item Developed a classification model to identify the sentiment of tweets about climate change.
+\end{itemize}
+
+\subsection*{A/B testing on questionnaire dataset}
+\begin{itemize}
+  \item Conducted A/B testing on a dataset from Kaggle, using Python libraries such as \textbf{numpy}, \textbf{pandas}, \textbf{scipy}, \textbf{seaborn}, \textbf{matplotlib}, \textbf{math}, and \textbf{statsmodel}.
+  \item Calculated the p-value for the A/B testing.
+\end{itemize}
+
+\subsection*{Shell Script}
+\begin{itemize}
+  \item Wrote a Unix shell script to monitor all current user processes.
+  \item Implemented logic to output the process tree with specified root on the standard output using \textbf{pstree -p}.
+\end{itemize}
+
+\subsection*{Software Engineering project}
+\begin{itemize}
+  \item Developed a system to locate water fountains at the University of Windsor.
+  \item Coded the backend for the project, implemented various design patterns, created Flask-based APIs, and deployed the API on Heroku.
+\end{itemize}
+
+\section*{Certifications}
+\begin{itemize}
+  \item \textbf{TensorFlow Developer Certification}
+  \item \textbf{Azure Associate Data Scientist Certification (DP-100)}
+\end{itemize}
+
+\end{document}Link to apply job :https://ca.trabajo.org/job-1262-20230927-2928ed6da35405b1dce3c784cc7c7a65

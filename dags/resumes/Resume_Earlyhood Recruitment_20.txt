@@ -1,0 +1,71 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{array}
+\usepackage[margin=1in]{geometry}
+\usepackage{enumitem}
+\usepackage{hyperref}
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,      
+    urlcolor=cyan,
+}
+
+\title{Resume Template}
+\author{Ariq Rahman}
+\date{}
+
+\begin{document}
+
+\maketitle
+
+\section{Contact Information}
+\begin{tabular}{@{}m{0.3\linewidth}m{0.6\linewidth}}
+Mobile: & 4373660580 \\
+Address: & 3 Calumet Crescent, M1H 1W4 \\
+\end{tabular}
+
+\section{Education}
+\begin{tabular}{@{}m{0.3\linewidth}m{0.6\linewidth}}
+Master of Applied Computing & University of Windsor, Windsor, Ontario \\
+& May 2022 - August 2023 \\
+Bachelor of Science in Computer Science and Engineering & Islamic University of Technology, Dhaka, Bangladesh \\
+& January 2016 - November 2019 \\
+\end{tabular}
+
+\section{Work Experience}
+\subsection{Data Analytics Intern}
+\textbf{TD Bank of Canada}, April 2023 - August 2023
+\begin{itemize}
+  \item Automated Servicenow queries using \textbf{PowerBI}, optimizing the ETL process and reducing query run time by \textbf{40\%}.
+  \item Created dashboards in PowerBI to visualize data for business intelligence purposes.
+\end{itemize}
+
+\subsection{Artificial Intelligence Engineer}
+\textbf{Intelligent Machines}, September 2021 - April 2022
+\begin{itemize}
+  \item Worked on a handwritten text recognition project, improving post-processing time by \textbf{500\%}.
+  \item Optimized matching time by \textbf{300\%} in a sound matching project.
+\end{itemize}
+
+\section{Personal Projects}
+\subsection{MLops on AWS}
+Performed MLops on AWS Sagemaker, utilizing a Kaggle dataset of tweets about climate change. Conducted preprocessing, label encoding, tokenization with the Roberta model, and supervised learning.
+
+\subsection{A/B Testing on Questionnaire Dataset}
+Conducted A/B testing on a survey dataset, calculating the p-value and utilizing Python libraries such as \textbf{Numpy}, \textbf{Pandas}, \textbf{Scipy}, \textbf{Seaborn}, \textbf{Matplotlib}, \textbf{Math}, and \textbf{Statsmodel}.
+
+\subsection{Climate Change Tweet Classification}
+Trained three models (Bert, Roberta, and Google Flan T5) on a climate change dataset, performing hyperparameter tuning and exploratory data analysis.
+
+\subsection{Movie Recommendation on AWS}
+Developed a movie recommendation system based on the IMDB dataset, utilizing AWS technologies. Created a data analysis pipeline using AWS Glue, AWS Athena, and AWS Quicksight.
+
+\section{Certifications}
+\begin{itemize}
+  \item \textbf{TensorFlow Developer Certification}
+  \item \textbf{Azure Associate Data Scientist Certification (DP-100)}
+\end{itemize}
+
+\end{document}Link to apply job :https://ca.bebee.com/job/20230928-dcd2947eaa8a15c07a3879ee616bcec2

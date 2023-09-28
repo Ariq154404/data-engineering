@@ -64,8 +64,8 @@ def load_llm(model_name):
         load_dotenv()
     #os.environ.get('openai_key') 
         llm=ChatOpenAI(model=model_name,temperature = 0,
-                          openai_api_key =  ,         
-                          max_tokens=3000                 
+                          openai_api_key = os.environ.get('openai_key') ,         
+                          max_tokens=512                
                          ) 
         return llm
 @dag(

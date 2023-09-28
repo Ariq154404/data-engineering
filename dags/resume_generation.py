@@ -61,9 +61,9 @@ Keyword skills:{skills}
 def load_llm(model_name):
         load_dotenv()
     #os.environ.get('openai_key') 
-        llm=ChatOpenAI(model=model_name,temperature = 0.8,
-                          openai_api_key = ,         
-                          max_tokens=2000                 
+        llm=ChatOpenAI(model=model_name,temperature = 0.85,
+                          openai_api_key = os.environ.get('openai_key') ,         
+                          max_tokens=10000                 
                          ) 
         return llm
 default_args = {

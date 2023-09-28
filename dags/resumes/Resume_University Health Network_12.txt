@@ -1,0 +1,77 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{enumitem}
+\usepackage[margin=1in]{geometry}
+\usepackage{hyperref}
+
+\title{Ariq Rahman - Resume}
+\author{}
+\date{}
+
+\begin{document}
+
+\maketitle
+
+\section*{Contact Information}
+\textbf{Mobile:} 4373660580 \\
+\textbf{Address:} 3 Calumet Crescent, M1H 1W4 \\
+\textbf{Email:} \href{mailto:ariq.rahman@email.com}{ariq.rahman@email.com}
+
+\section*{Education}
+\begin{itemize}
+    \item \textbf{Master of Applied Computing, Artificial Intelligence Stream} \\
+    University of Windsor, Windsor, Ontario (May 2022-August 2023)
+    \item \textbf{Bachelor of Science in Computer Science and Engineering} \\
+    Islamic University of Technology, Dhaka, Bangladesh (January 2016-November 2019)
+\end{itemize}
+
+\section*{Work Experience}
+\subsection*{Data Analytics Intern, TD Bank of Canada (April-August 2023)}
+\begin{itemize}
+    \item Automated Servicenow queries and downloads using Python Selenium script as part of the ETL process.
+    \item Created dashboards in PowerBI, optimizing power query for ETL, which decreased the query run time by 40\%.
+\end{itemize}
+
+\subsection*{Artificial Intelligence Engineer, Intelligent Machines (Sept 2021-April 2022)}
+\begin{itemize}
+    \item Worked on a handwritten text recognition project and a sound matching project.
+    \item Performed data analysis, data visualization, feature engineering, and trained deep learning models.
+    \item Designed and coded algorithms to optimize post-processing time and matching time.
+\end{itemize}
+
+\section*{Personal Projects}
+\subsection*{A/B Testing on Questionnaire Dataset}
+\begin{itemize}
+    \item Conducted A/B testing on a dataset from Kaggle, calculating the p-value for the test.
+    \item Utilized Python libraries such as \textbf{numpy}, \textbf{pandas}, \textbf{scipy}, \textbf{seaborn}, \textbf{matplotlib}, \textbf{math}, and \textbf{statsmodel}.
+\end{itemize}
+
+\subsection*{Climate Change Tweet Classification}
+\begin{itemize}
+    \item Worked on a classification task using the Kaggle dataset of tweets about climate change.
+    \item Trained three models (\textbf{bert}, \textbf{roberta}, and \textbf{google flan t5}), performed hyperparameter tuning, and conducted exploratory data analysis.
+\end{itemize}
+
+\subsection*{Movie Recommendation on AWS}
+\begin{itemize}
+    \item Developed a movie recommendation system based on the IMDB dataset.
+    \item Used AWS technologies to convert movie descriptions into tokens and stored them as embeddings in AWS opensearch embedding space.
+    \item Created a data analysis pipeline using AWS Glue, AWS Athena, and AWS Quicksight.
+\end{itemize}
+
+\subsection*{IEEE Cis Fraud Detection}
+\begin{itemize}
+    \item Participated in a binary classification project on a structured dataset to detect fraudulent papers.
+    \item Performed exploratory data analysis, feature engineering, and used an ensemble of neural network and decision tree for classification.
+\end{itemize}
+
+\section*{Certifications}
+\begin{itemize}
+    \item \textbf{TensorFlow Developer Certification}
+    \item \textbf{Azure Associate Data Scientist Certification (DP-100)}
+\end{itemize}
+
+\section*{Key Skills}
+Data Analysis, Data Visualization, Machine Learning, A/B Testing, EDA, Feature Engineering, Python, \textbf{Numpy}, \textbf{Pandas}, \textbf{Scipy}, \textbf{Seaborn}, \textbf{Matplotlib}, AWS, PowerBI, TensorFlow, Azure
+
+\end{document}Link to apply job :https://emplois.ca.indeed.com/viewjob?jk=4248c741da4793cc

@@ -1,0 +1,72 @@
+\documentclass{resume}
+
+\begin{document}
+
+\title{Ariq Rahman - Resume}
+\author{}
+\date{}
+
+\maketitle
+
+\section{Contact Information}
+\begin{itemize}
+    \item Mobile: 4373660580
+    \item Address: 3 Calumet Crescent, M1H 1W4
+\end{itemize}
+
+\section{Education}
+\begin{itemize}
+    \item Master of Applied Computing, Artificial Intelligence Stream, University of Windsor, Windsor, Ontario (May 2022-August 2023)
+    \item Bachelor of Science in Computer Science and Engineering, Islamic University of Technology, Dhaka, Bangladesh (January 2016-November 2019)
+\end{itemize}
+
+\section{Work Experience}
+\subsection{Data Analytics Intern, TD Bank of Canada (April-August 2023)}
+\begin{itemize}
+    \item Automated Servicenow queries and downloads using Python Selenium script as part of the ETL process.
+    \item Created dashboards in PowerBI, optimizing Power Query for ETL, resulting in a 40% decrease in query run time.
+\end{itemize}
+
+\subsection{Artificial Intelligence Engineer, Intelligent Machines (Sept 2021-April 2022)}
+\begin{itemize}
+    \item Worked on a handwritten text recognition project and a sound matching project.
+    \item Performed data analysis, data visualization, feature engineering, and trained deep learning models.
+    \item Designed and coded algorithms to optimize post-processing time and matching time.
+\end{itemize}
+
+\section{Personal Projects}
+\subsection{A/B testing on questionnaire dataset}
+\begin{itemize}
+    \item Conducted A/B testing on a questionnaire dataset, calculating the p-value for the test.
+    \item Utilized Python libraries such as NumPy, Pandas, SciPy, Seaborn, Matplotlib, Math, and Statsmodel.
+\end{itemize}
+
+\subsection{Climate Change tweet classification}
+\begin{itemize}
+    \item Worked on a classification task using the Kaggle dataset of tweets about climate change.
+    \item Trained three models (BERT, RoBERTa, and Google FLAN T5), performed hyperparameter tuning, and conducted exploratory data analysis.
+\end{itemize}
+
+\subsection{Movie recommendation on AWS}
+\begin{itemize}
+    \item Developed a movie recommendation system based on the IMDB dataset.
+    \item Used AWS technologies to convert movie descriptions into tokens and stored them as embeddings in AWS OpenSearch embedding space.
+    \item Created a data analysis pipeline using AWS Glue, AWS Athena, and AWS QuickSight.
+\end{itemize}
+
+\subsection{IEEE CIS Fraud detection}
+\begin{itemize}
+    \item Participated in a binary classification project on a structured dataset to detect fraudulent papers.
+    \item Performed exploratory data analysis, feature engineering, and used an ensemble of neural network and decision tree for classification.
+\end{itemize}
+
+\section{Certifications}
+\begin{itemize}
+    \item TensorFlow Developer Certification
+    \item Azure Associate Data Scientist Certification (DP-100)
+\end{itemize}
+
+\section{Key Skills}
+Data Analysis, Data Visualization, Machine Learning, A/B Testing, EDA, Feature Engineering, Python, NumPy, Pandas, SciPy, Seaborn, Matplotlib, AWS, PowerBI, TensorFlow, Azure.
+
+\end{document}Link to apply job :https://ca.linkedin.com/jobs/view/operations-analyst-at-corus-orthodontists-3729417350

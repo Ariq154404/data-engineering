@@ -16,8 +16,8 @@ from langchain.document_loaders import TextLoader
 def load_llm(model_name):
         load_dotenv()
     #os.environ.get('openai_key') 
-        llm=ChatOpenAI(model=model_name,temperature = 0.6,
-                          openai_api_key = "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",         
+        llm=ChatOpenAI(model=model_name,temperature = 0,
+                          openai_api_key = os.environ.get('openai_key'),         
                           max_tokens=3000                
                          ) 
         return llm
@@ -30,7 +30,7 @@ def resume_filter(title,tag):
     input_variables=["title","data"],
     template="""Information about Ariq:
 {data}
-Filter out  information Ariq Rahman in first person within 500 words  as a {title} role. Filter and list out 5 personal projects that are most relevant to the role of a {title}. Keep information about work experience, contact information, education, certificates in seperate sections. Phrase any sentence to contain as much as possible keyword skills found in  a  typical role of {title}.  Keep the english easy to understand.
+Filter out  information for Ariq Rahman  within 500 words that showcases his profile in the {title} role. Filter and list out 5 personal projects that are most relevant to the role of a {title} . Keep information about work experience, contact information, education, certificates in seperate sections. Insert as much as possible keyword skills and words found in  a typical role of {title} person.  Keep the relevant Key performance indicators. Keep subsections for each workplaces.
 """,
          )
     chain = LLMChain(llm=llm, prompt=prompt)

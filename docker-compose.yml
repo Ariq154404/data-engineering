@@ -2,6 +2,7 @@ version: '3'
 services:
   webserver:
     image: apache/airflow:2.6.0-python3.9
+    restart: unless-stopped
     command: >
       bash -c "python -m pip install --upgrade pip &&
                pip install -r /opt/airflow/requirements.txt &&
@@ -16,7 +17,6 @@ services:
     volumes:
       - ./dags:/opt/airflow/dags
       - ./requirements.txt:/opt/airflow/requirements.txt
-      - ./env:/opt/airflow/.env
       - ./logs:/opt/airflow/logs
     ports:
       - "8080:8080"
@@ -27,6 +27,8 @@ services:
       retries: 3
     networks:
       - confluent
+    env_file:
+      - ./.env
     depends_on:
       - postgres
       - cassandra_db
@@ -46,10 +48,11 @@ services:
     volumes:
       - ./dags:/opt/airflow/dags
       - ./requirements.txt:/opt/airflow/requirements.txt
-      - ./env:/opt/airflow/.env
       - ./logs:/opt/airflow/logs
     networks:
       - confluent
+    env_file:
+      - ./.env
     depends_on:
       - webserver
 
@@ -68,6 +71,7 @@ services:
 
   cassandra_db:
     image: cassandra:latest
+    restart: unless-stopped
     container_name: cassandra
     hostname: cassandra
     ports:

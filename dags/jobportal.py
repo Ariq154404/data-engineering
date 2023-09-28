@@ -1,6 +1,7 @@
 from abc import ABC, abstractmethod
 import requests
 import json
+import os
 class JobPortal(ABC):
 
     @abstractmethod
@@ -13,7 +14,7 @@ class Jsearch(JobPortal):
         self.url = "https://jsearch.p.rapidapi.com/search"
 
         self.headers = {
-	"X-RapidAPI-Key": "bddea5728dmshb9cc1671c210a7cp1417d7jsn533948b366bd",
+	"X-RapidAPI-Key": os.environ.get('jsearch_api'),
 	"X-RapidAPI-Host": "jsearch.p.rapidapi.com"
                        }
     def filter_dic(self,res_dic,tag):
@@ -21,7 +22,7 @@ class Jsearch(JobPortal):
         lst=[{key: v[key] for key in keys_list if key in v} for v in res_dic["data"] ]
         for v in lst:
             v['tag']=tag
-        return lst[:2]
+        return lst
             
         
     def fetch_job_description(self, job_title: str,tag: str):
