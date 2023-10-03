@@ -34,6 +34,11 @@ The diagram above shows sample ETL DAG in airflow
 
 The image above shows how a sample resume looks like. Whenever the resume generation pipeline DAG is executed, it fills up the folder with tailored resumes
 
+
+![Sample Resume Output ](https://github.com/Ariq154404/data-engineering/blob/main/sample_output.png)
+
+The diagram above shows sample output from the resume 
+
 ![Sample filtered information](https://github.com/Ariq154404/data-engineering/blob/main/sample_filtered_infor.png)
 
 
