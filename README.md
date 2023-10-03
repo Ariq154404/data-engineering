@@ -15,7 +15,7 @@ In order to save API cost , which is determined by the number of input and outpu
 
 ![Architecture](https://github.com/Ariq154404/data-engineering/blob/main/architecture.png)
 
-Initially a ETL pipeline is created as Apache Airflow DAG. This pipeline extracts job description from the API. Then, another task is to extract the keyword skills from the job and create a structure in accordace to the schema and store it in cassandra. Cassandra is chosen as No-sql databse with the capability to sore list of keywords. The partition key here is the title of the data and the primary key within the partition is the date the job was posted which is extracted from the API.
+Initially a ETL pipeline is created as Apache Airflow DAG. This pipeline extracts job description from the API. Then, another task is to extract the keyword skills from the job and create a structure in accordace to the schema and store it in cassandra. Cassandra is chosen as No-sql database with the capability to sore list of keywords. The partition key here is the title of the data and the primary key within the partition is the date the job was posted which is extracted from the API. Also, the scalibility feature cassandra makes it a suitable choice for use based on the volume of jobs during on season compared to off season
 
 Second DAG retrieves the data within that last day and sends it to llm, which then based on the correct job role , retrieved the job role and churns out resume in latex.
 
@@ -135,7 +135,7 @@ Create .env file with the following command
 `jsearch_api`
 
 
-## Acknowledgements
+## References
 
  - [Docker compose for airflow and cassandra](https://github.com/airscholar/e2e-data-engineering/blob/main/docker-compose.yml)
  
