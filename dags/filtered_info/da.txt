@@ -1,0 +1,38 @@
+Profile:
+
+Ariq Rahman is a highly skilled Data Analyst with a strong background in data analysis, data visualization, and machine learning. He has a Master's degree in Applied Computing, specializing in Artificial Intelligence, and holds certifications in TensorFlow and Azure Data Science. Ariq has a proven track record of utilizing data-driven insights to drive business improvement and optimize performance.
+
+Personal Projects:
+
+1. A/B testing on questionnaire dataset: Ariq conducted A/B testing on a dataset from Kaggle, calculating the p-value for the test. He used Python libraries such as numpy, pandas, scipy, seaborn, matplotlib, math, and statsmodel.
+
+2. Climate Change tweet classification: Ariq worked on a classification task using the Kaggle dataset of tweets about climate change. He trained three models (bert, roberta, and google flan t5), performed hyperparameter tuning, and conducted exploratory data analysis.
+
+3. Movie recommendation on AWS: Ariq developed a movie recommendation system based on the IMDB dataset. He used AWS technologies to convert movie descriptions into tokens and stored them as embeddings in AWS opensearch embedding space. He also created a data analysis pipeline using AWS glue, AWS athena, and AWS quicksight.
+
+4. IEEE Cis Fraud detection: Ariq participated in a binary classification project on a structured dataset to detect fraudulent papers. He performed exploratory data analysis, feature engineering, and used an ensemble of neural network and decision tree for classification.
+
+5. Exploratory Data Analysis (EDA): Ariq volunteered as a Data Analyst in a project to classify different cybersecurity threats. He analyzed and cleaned datasets, plotted statistical graphs, and extracted features that optimized classification model training time.
+
+Work Experience:
+
+1. Data Analytics Intern at TD Bank of Canada (April-August 2023): Ariq automated servicenow queries and downloads using Python selenium script as part of the ETL process. He also created dashboards in PowerBI, optimizing power query for ETL, which decreased the query run time by 40%.
+
+2. Artificial Intelligence Engineer at Intelligent Machines (Sept 2021-April 2022): Ariq worked on a handwritten text recognition project and a sound matching project. He performed data analysis, data visualization, feature engineering, and trained deep learning models. He also designed and coded algorithms to optimize post-processing time and matching time.
+
+Education:
+
+1. Master of Applied Computing, Artificial Intelligence Stream, University of Windsor, Windsor, Ontario (May 2022-August 2023)
+2. Bachelor of Science in Computer Science and Engineering, Islamic University of Technology, Dhaka, Bangladesh (January 2016-November 2019)
+
+Certifications:
+
+1. TensorFlow Developer Certification
+2. Azure Associate Data Scientist Certification (DP-100)
+
+Contact Information:
+
+Mobile: 4373660580
+Address: 3 Calumet Crescent, M1H 1W4
+
+Key Skills: Data Analysis, Data Visualization, Machine Learning, A/B Testing, EDA, Feature Engineering, Python, Numpy, Pandas, Scipy, Seaborn, Matplotlib, AWS, PowerBI, TensorFlow, Azure.

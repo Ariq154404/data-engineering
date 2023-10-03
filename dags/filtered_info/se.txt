@@ -1,0 +1,38 @@
+Profile:
+
+Ariq Rahman is a highly skilled Software Engineer with a strong background in Python, AWS, and Unix Shell Scripting. He has a proven track record of delivering high-quality software solutions and has a keen interest in machine learning and data analysis. He has a Master's degree in Applied Computing, specializing in Artificial Intelligence, and holds certifications in TensorFlow and Azure Data Science.
+
+Personal Projects:
+
+1. **MLops on AWS:** Ariq implemented MLops on AWS SageMaker, using Python libraries such as sklearn, multiprocessing, transformer, numpy, pandas, tensorflow, argparse, and boto3. He worked with a Kaggle dataset of tweets about climate change and developed a classification model to identify the sentiment of the tweets.
+
+2. **A/B testing on questionnaire dataset:** Ariq conducted A/B testing on a dataset from Kaggle, using Python libraries such as numpy, pandas, scipy, seaborn, matplotlib, math, and statsmodel. He calculated the p-value for the A/B testing.
+
+3. **Shell Script:** Ariq wrote a Unix shell script to monitor all current user processes. If any process had more than n descendants, the script would output the process tree with p as the root on the standard output using pstree -p.
+
+4. **Software Engineering project:** As part of a team, Ariq developed a system to locate water fountains at the University of Windsor. He coded the backend for the project, implemented various design patterns, created Flask-based APIs, and deployed the API on Heroku. He also wrote unit tests for different modules and conducted code coverage.
+
+5. **Django project for Trekking:** Ariq collaborated on a Django project where he built features for a trekking website. He built the login, logout page, and forget password feature.
+
+Work Experience:
+
+1. **Data Analytics Intern at TD Bank of Canada (April-August 2023):** Ariq automated ServiceNow queries and downloads using Python Selenium script as part of the ETL process. He also created dashboards in PowerBI, using optimized PowerQuery for ETL process, and designed data models in PowerBI.
+
+2. **Artificial Intelligence Engineer at Intelligent Machines (Sept 2021-April 2022):** Ariq worked on a handwritten text recognition project for Unilever Bangladesh and a sound matching project for Unilever Bangladesh. He used Python, Numpy, Pandas, Matplotlib, Tensorflow, Keras, and Docker Tensorflow Serving.
+
+Education:
+
+1. Master of Applied Computing, Artificial Intelligence Stream, University of Windsor, Windsor, Ontario (May 2022-August 2023)
+2. Bachelor of Science in Computer Science and Engineering, Islamic University of Technology, Dhaka, Bangladesh (January 2016-November 2019)
+
+Certifications:
+
+1. TensorFlow Developer Certification
+2. Azure Associate Data Scientist Certification (DP-100)
+
+Contact Information:
+
+Mobile: 4373660580
+Address: 3 Calumet Crescent, M1H 1W4
+
+Skills: Python, AWS, Unix Shell Scripting, Machine Learning, Data Analysis, Flask, Django, Selenium, PowerBI, Numpy, Pandas, Matplotlib, Tensorflow, Keras, Docker.

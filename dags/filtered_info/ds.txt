@@ -1,0 +1,36 @@
+Profile:
+
+Ariq Rahman is a highly skilled Data Scientist with a Master's degree in Applied Computing, specializing in Artificial Intelligence, and a Bachelor's degree in Computer Science and Engineering. He is certified as a TensorFlow Developer and an Azure Associate Data Scientist. Ariq has a strong background in machine learning, data analysis, and data visualization, with extensive experience in Python, Numpy, Pandas, Matplotlib, and various AWS services. 
+
+Personal Projects:
+
+1. MLops on AWS: Ariq performed MLops on AWS Sagemaker, using a Kaggle dataset of tweets about climate change. He conducted preprocessing, label encoding, tokenization with the Roberta model, and supervised learning. 
+
+2. A/B testing on questionnaire dataset: Ariq conducted A/B testing on a survey dataset, calculating the p-value and utilizing Python libraries such as Numpy, Pandas, Scipy, Seaborn, Matplotlib, Math, and Statsmodel.
+
+3. Climate Change tweet classification: Ariq trained three models (Bert, Roberta, and Google Flan T5) on a climate change dataset, performing hyperparameter tuning and exploratory data analysis.
+
+4. Movie recommendation on AWS: Ariq developed a movie recommendation system based on the IMDB dataset, using AWS technologies. He also created a data analysis pipeline using AWS Glue, AWS Athena, and AWS Quicksight.
+
+5. AWS orchestration of bitcoin forecast: Ariq used AWS Event Bridge to orchestrate multiple notebooks for forecasting bitcoin prices. The notebooks were run in AWS Sagemaker, with each event triggering the next stage of the pipeline.
+
+Work Experience:
+
+1. Data Analytics Intern at TD Bank of Canada (April-August 2023): Ariq automated Servicenow queries and created dashboards in PowerBI, optimizing the ETL process and reducing query run time by 40%.
+
+2. Artificial Intelligence Engineer at Intelligent Machines (Sept 2021-April 2022): Ariq worked on a handwritten text recognition project and a sound matching project, improving post-processing time by 500% and optimizing matching time by 300%, respectively.
+
+Education:
+
+1. Master of Applied Computing, Artificial Intelligence Stream, University of Windsor, Windsor, Ontario (May 2022-August 2023)
+2. Bachelor of Science in Computer Science and Engineering, Islamic University of Technology, Dhaka, Bangladesh (January 2016-November 2019)
+
+Certifications:
+
+1. TensorFlow Developer Certification
+2. Azure Associate Data Scientist Certification (DP-100)
+
+Contact Information:
+
+Mobile: 4373660580
+Address: 3 Calumet Crescent, M1H 1W4

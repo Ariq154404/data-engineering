@@ -1,0 +1,38 @@
+Profile:
+
+Ariq Rahman is a skilled Machine Learning professional with a strong background in data analysis, feature engineering, and model training. He has a Master's degree in Applied Computing, specializing in Artificial Intelligence, and holds certifications in TensorFlow and Azure Data Science. Ariq has a proven track record of implementing machine learning models in real-world projects, optimizing algorithms, and improving business outcomes.
+
+Relevant Personal Projects:
+
+1. MLops on AWS: Ariq implemented MLops on AWS SageMaker, using a Kaggle dataset of tweets about climate change. He performed data preprocessing, label encoding, tokenization with the Roberta model, and supervised learning for classification tasks.
+
+2. A/B testing on questionnaire dataset: Ariq conducted A/B testing on a survey dataset, calculating p-values and utilizing Python libraries such as numpy, pandas, scipy, seaborn, matplotlib, math, and statsmodel.
+
+3. Climate Change tweet classification: Ariq trained three models (BERT, Roberta, and Google Flan T5) on a climate change dataset, performed hyperparameter tuning, and tracked the experiment on the Wandb MLops platform.
+
+4. AWS orchestration of bitcoin forecast: Ariq used AWS Event Bridge to orchestrate multiple notebooks for forecasting bitcoin prices. The notebooks were run on AWS SageMaker, with each stage of the pipeline triggered by an event.
+
+5. IEEE Cis Fraud detection: Ariq participated in a binary classification project to detect fraudulent papers. He performed exploratory data analysis, feature engineering, and implemented an ensemble of neural network and decision tree for classification.
+
+Work Experience:
+
+1. Data Analytics Intern at TD Bank of Canada (April-August 2023): Ariq automated ServiceNow queries using Python Selenium and created dashboards in PowerBI. He optimized PowerQuery for ETL, reducing query run time by 40%.
+
+2. Artificial Intelligence Engineer at Intelligent Machines (Sept 2021-April 2022): Ariq worked on a handwritten text recognition project for Unilever Bangladesh, performing data analysis, feature engineering, and model training. He also worked on a sound matching project, designing an algorithm that optimized matching time by 300%.
+
+Education:
+
+1. Master of Applied Computing, Artificial Intelligence Stream, University of Windsor, Windsor, Ontario (May 2022-August 2023)
+2. Bachelor of Science in Computer Science and Engineering, Islamic University of Technology, Dhaka, Bangladesh (January 2016-November 2019)
+
+Certifications:
+
+1. TensorFlow Developer Certification
+2. Azure Associate Data Scientist Certification (DP-100)
+
+Contact Information:
+
+Mobile: 4373660580
+Address: 3 Calumet Crescent, M1H 1W4
+
+Key Skills: Machine Learning, Data Analysis, Feature Engineering, Model Training, A/B Testing, AWS SageMaker, Python, Numpy, Pandas, Scipy, Seaborn, Matplotlib, TensorFlow, Keras, PowerBI, Selenium, ETL, Azure Databricks, Docker, Wandb MLops.

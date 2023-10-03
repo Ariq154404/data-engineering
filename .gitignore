@@ -1,5 +1,4 @@
 *.env
-myenv/
-dags/env/
-dags/resumes/`
-dags/filtered_info/ 
+/myenv/*
+/dags/env/*
+/dags/resumes/`* 

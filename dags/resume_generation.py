@@ -35,7 +35,7 @@ Job title:{title}
 Keyword skills:{skills}
 """,
          )
-    llm=load_llm('gpt-3.5-turbo-16k')
+    llm=load_llm('gpt-4')
     chain = LLMChain(llm=llm, prompt=prompt)
     # loader = TextLoader("test/myself.txt")
     # data=loader.load()
@@ -61,9 +61,9 @@ Keyword skills:{skills}
 def load_llm(model_name):
         load_dotenv()
     #os.environ.get('openai_key') 
-        llm=ChatOpenAI(model=model_name,temperature = 0.85,
+        llm=ChatOpenAI(model=model_name,temperature = 0.7,
                           openai_api_key = os.environ.get('openai_key') ,         
-                          max_tokens=10000                 
+                          max_tokens=2000                 
                          ) 
         return llm
 default_args = {

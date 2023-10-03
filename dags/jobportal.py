@@ -22,7 +22,7 @@ class Jsearch(JobPortal):
         lst=[{key: v[key] for key in keys_list if key in v} for v in res_dic["data"] ]
         for v in lst:
             v['tag']=tag
-        return lst
+        return lst[:2]
             
         
     def fetch_job_description(self, job_title: str,tag: str):
