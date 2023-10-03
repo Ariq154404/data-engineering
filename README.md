@@ -59,7 +59,7 @@ Clone the project
 Create the virtual environment
 
 ```bash
-  python3 -m venv myenv
+  python3.9 -m venv myenv
 ```
 
 Activate the virtual Environment

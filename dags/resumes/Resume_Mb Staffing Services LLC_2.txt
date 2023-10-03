@@ -1,0 +1,46 @@
+Here is a LaTeX template for Ariq Rahman's resume:
+
+```latex
+\documentclass[a4paper,10pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{enumitem}
+\usepackage[top=30mm, bottom=30mm, left=20mm, right=20mm]{geometry}
+
+\begin{document}
+
+\begin{center}
+\Large{\textbf{Ariq Rahman}}\\
+\small{3 Calumet Crescent, M1H 1W4}\\
+\small{Mobile: 4373660580}\\
+\end{center}
+
+\section*{\underline{Education}}
+\begin{itemize}
+\item \textbf{Master of Applied Computing, Artificial Intelligence Stream}, University of Windsor, Windsor, Ontario (May 2022-August 2023)
+\item \textbf{Bachelor of Science in Computer Science and Engineering}, Islamic University of Technology, Dhaka, Bangladesh (January 2016-November 2019)
+\end{itemize}
+
+\section*{\underline{Certifications}}
+\begin{itemize}
+\item \textbf{TensorFlow Developer Certification}
+\item \textbf{Azure Associate Data Scientist Certification (DP-100)}
+\end{itemize}
+
+\section*{\underline{Work Experience}}
+\begin{itemize}
+\item \textbf{Data Analytics Intern}, TD Bank of Canada (April-August 2023): \textit{Automated} Servicenow queries and \textit{created} dashboards in \textbf{PowerBI}, optimizing the ETL process and reducing query run time by \textbf{40\%}.
+\item \textbf{Artificial Intelligence Engineer}, Intelligent Machines (Sept 2021-April 2022): \textit{Improved} post-processing time by \textbf{500\%} and \textit{optimized} matching time by \textbf{300\%} on a handwritten text recognition and a sound matching project.
+\end{itemize}
+
+\section*{\underline{Personal Projects}}
+\begin{itemize}
+\item \textbf{MLops on AWS}: \textit{Performed} MLops on AWS Sagemaker, using a Kaggle dataset of tweets about climate change. Conducted preprocessing, label encoding, tokenization with the Roberta model, and supervised learning.
+\item \textbf{A/B testing on questionnaire dataset}: \textit{Conducted} A/B testing on a survey dataset, calculating the p-value and utilizing Python libraries such as \textbf{Numpy, Pandas, Scipy, Seaborn, Matplotlib, Math, and Statsmodel}.
+\item \textbf{Movie recommendation on AWS}: \textit{Developed} a movie recommendation system based on the IMDB dataset, using AWS technologies. Created a data analysis pipeline using \textbf{AWS Glue, AWS Athena, and AWS Quicksight}.
+\item \textbf{AWS orchestration of bitcoin forecast}: \textit{Used} AWS Event Bridge to orchestrate multiple notebooks for forecasting bitcoin prices. The notebooks were run in AWS Sagemaker, with each event triggering the next stage of the pipeline.
+\end{itemize}
+
+\end{document}
+```
+
+Please replace the keyword skills with actual skills as the provided list seems to be incorrectly formatted. The skills should be highlighted in the same way as in the template above.Link to apply job :https://ca.bebee.com/job/20231003-606b2738b21cc5484cadf2d0c1c28a04

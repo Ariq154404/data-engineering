@@ -1,0 +1,45 @@
+\documentclass{article}
+\usepackage{enumitem}
+\usepackage[utf8]{inputenc}
+\usepackage{hyperref}
+\usepackage{graphicx}
+\usepackage[a4paper, total={6in, 8in}]{geometry}
+
+\begin{document}
+
+\begin{center}
+\Large\textbf{Ariq Rahman}\\
+\small 3 Calumet Crescent, M1H 1W4\\
+\href{tel:4373660580}{4373660580}\\
+\end{center}
+
+\section*{\underline{Education}}
+\begin{itemize}
+\item \textbf{Master of Applied Computing, Artificial Intelligence Stream}, University of Windsor, Windsor, Ontario (May 2022-August 2023)
+\item \textbf{Bachelor of Science in Computer Science and Engineering}, Islamic University of Technology, Dhaka, Bangladesh (January 2016-November 2019)
+\end{itemize}
+
+\section*{\underline{Certifications}}
+\begin{itemize}
+\item \textbf{TensorFlow Developer Certification}
+\item \textbf{Azure Associate Data Scientist Certification (DP-100)}
+\end{itemize}
+
+\section*{\underline{Work Experience}}
+\begin{itemize}
+\item \textbf{Data Analytics Intern}, TD Bank of Canada (April-August 2023): Automated ServiceNow queries using \textbf{Python Selenium} and created dashboards in \textbf{PowerBI}. Optimized PowerQuery for ETL, reducing query run time by 40%.
+\item \textbf{Artificial Intelligence Engineer}, Intelligent Machines (Sept 2021-April 2022): Worked on a handwritten text recognition project for Unilever Bangladesh, performing data analysis, feature engineering, and model training. Also worked on a sound matching project, designing an algorithm that optimized matching time by 300%.
+\end{itemize}
+
+\section*{\underline{Personal Projects}}
+\begin{itemize}
+\item \textbf{MLops on AWS}: Implemented MLops on AWS SageMaker, using a Kaggle dataset of tweets about climate change. Performed data preprocessing, label encoding, tokenization with the Roberta model, and supervised learning for classification tasks.
+\item \textbf{A/B testing on questionnaire dataset}: Conducted A/B testing on a survey dataset, calculating p-values and utilizing Python libraries such as numpy, pandas, scipy, seaborn, matplotlib, math, and statsmodel.
+\item \textbf{Climate Change tweet classification}: Trained three models (BERT, Roberta, and Google Flan T5) on a climate change dataset, performed hyperparameter tuning, and tracked the experiment on the Wandb MLops platform.
+\item \textbf{AWS orchestration of bitcoin forecast}: Used AWS Event Bridge to orchestrate multiple notebooks for forecasting bitcoin prices. The notebooks were run on AWS SageMaker, with each stage of the pipeline triggered by an event.
+\end{itemize}
+
+\section*{\underline{Key Skills}}
+\textbf{Machine Learning}, \textbf{Data Analysis}, Feature Engineering, Model Training, A/B Testing, AWS SageMaker, Python, Numpy, Pandas, Scipy, Seaborn, Matplotlib, TensorFlow, Keras, PowerBI, Selenium, ETL, Azure Databricks, Docker, Wandb MLops.
+
+\end{document}Link to apply job :https://ca.bebee.com/job/20231003-c96be63288b1f170acd3febd73dac9fd

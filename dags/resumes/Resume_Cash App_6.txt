@@ -1,0 +1,57 @@
+Here is a LaTeX template for Ariq Rahman's resume:
+
+```latex
+\documentclass[a4paper,10pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[top=30mm, bottom=30mm, left=20mm, right=20mm]{geometry}
+\usepackage{enumitem}
+\usepackage{bold-extra}
+\usepackage{color}
+
+\begin{document}
+
+\begin{center}
+\textbf{\Large Ariq Rahman} \\
+3 Calumet Crescent, M1H 1W4 \\
+Mobile: 4373660580
+\end{center}
+
+\section*{\textbf{Education}}
+\begin{itemize}
+\item Master of Applied Computing, \textbf{Artificial Intelligence Stream}, University of Windsor, Windsor, Ontario (May 2022-August 2023)
+\item Bachelor of Science in \textbf{Computer Science and Engineering}, Islamic University of Technology, Dhaka, Bangladesh (January 2016-November 2019)
+\end{itemize}
+
+\section*{\textbf{Certifications}}
+\begin{itemize}
+\item \textbf{TensorFlow Developer Certification}
+\item \textbf{Azure Associate Data Scientist Certification DP-100}
+\end{itemize}
+
+\section*{\textbf{Work Experience}}
+\begin{itemize}
+\item \textbf{Data Analytics Intern at TD Bank of Canada (April-August 2023):} Automated ServiceNow queries and downloaded files as part of the ETL process. Created dashboards in PowerBI, using optimized PowerQuery for ETL processes, and made data models in PowerBI.
+\item \textbf{Artificial Intelligence Engineer at Intelligent Machines (Sept 2021-April 2022):} Worked on a handwritten text recognition project for Unilever Bangladesh, performing data analysis, data visualization, feature engineering, and training deep learning classification models. Also worked on a sound matching project, designing and programming an algorithm that optimized matching time by 300%.
+\end{itemize}
+
+\section*{\textbf{Personal Projects}}
+\begin{itemize}
+\item \textbf{MLops on AWS:} Implemented MLops on AWS SageMaker, using a Kaggle dataset of tweets about climate change. Performed data preprocessing, label encoding, tokenization with the Roberta model, and stored the model into a feature store.
+\item \textbf{A/B testing on questionnaire dataset:} Conducted A/B testing on a dataset from Kaggle, calculating the p-value for the test.
+\item \textbf{AWS orchestration of bit-coin forecast:} Used AWS Event Bridge to orchestrate multiple notebooks that included a model to forecast bitcoin prices.
+\item \textbf{Data Engineering with llm:} Automated the tailoring of resumes using a large language model (llm). Created an ETL DAG using Apache Airflow, extracted job descriptions, filtered out keywords using llm, created a data model in Cassandra, and stored the extracted keywords.
+\end{itemize}
+
+\section*{\textbf{Skills}}
+\begin{itemize}
+\item \textbf{Languages:} Python, Java, Kotlin, Golang
+\item \textbf{Frameworks/Libraries:} TensorFlow, sklearn, multiprocessing, transformer, numpy, pandas, argparse, boto3, Flask, Hibernate
+\item \textbf{Databases:} MySQL, DynamoDB
+\item \textbf{Tools:} AWS, Kubernetes, DataDog, Prometheus, Kafka
+\item \textbf{Concepts:} Authentication, Authorization, Device Management, APIs, Services, Account Security, Architecture, Software Engineering, Communication Skills, Customer Empathy, Product Security, AuthN/AuthZ Standards, Large Codebases, Distributed Team, HTTP, JSON, gRPC, Protocol Buffers, Event-Driven Architecture
+\end{itemize}
+
+\end{document}
+```
+
+This template includes all the necessary sections and highlights the relevant skills and tools. It also uses bullet points for each sentence under a subsection, as requested.Link to apply job :https://ca.trabajo.org/job-850-20231003-7919b694d489e74f49320acd1e900b77

@@ -1,0 +1,46 @@
+Here is a LaTeX template for Ariq Rahman's resume:
+
+```latex
+\documentclass[a4paper,10pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{enumitem}
+\usepackage[top=30mm, bottom=30mm, left=20mm, right=20mm]{geometry}
+
+\begin{document}
+
+\begin{center}
+\Large{\textbf{Ariq Rahman}}\\
+\small{3 Calumet Crescent, M1H 1W4}\\
+\small{Mobile: 4373660580}
+\end{center}
+
+\section*{\underline{Education}}
+\begin{itemize}
+\item Master of Applied Computing in Artificial Intelligence Stream, University of Windsor, Windsor, Ontario (May 2022-August 2023)
+\item Bachelor of Science in Computer Science and Engineering, Islamic University of Technology, Dhaka, Bangladesh (January 2016-November 2019)
+\end{itemize}
+
+\section*{\underline{Certifications}}
+\begin{itemize}
+\item \textbf{Tensorflow Developer Certification}
+\item \textbf{Azure Associate Data Scientist Certification (DP-100)}
+\end{itemize}
+
+\section*{\underline{Work Experience}}
+\begin{itemize}
+\item \textbf{Data Analytics Intern at TD Bank of Canada (April-August 2023):} Automated servicenow queries and downloads using \textbf{Python selenium script} as part of the ETL process. Created dashboards in PowerBI using optimized powerquery for ETL process and made data models in PowerBI.
+\item \textbf{Artificial Intelligence Engineer at Intelligent Machines (Sept 2021-April 2022):} Worked on a handwritten text recognition project and a sound matching project. Performed data analysis, data visualization, feature engineering, and model training using \textbf{Python}, \textbf{Numpy}, \textbf{Pandas}, Matplotlib, Tensorflow, and Keras.
+\end{itemize}
+
+\section*{\underline{Personal Projects}}
+\begin{itemize}
+\item \textbf{MLops on AWS:} Developed a machine learning model on AWS SageMaker using \textbf{Python} libraries such as \textbf{sklearn}, multiprocessing, transformer, \textbf{numpy}, \textbf{pandas}, tensorflow, argparse, and boto3. Performed data preprocessing, label encoding, tokenization, and model training for a classification task on a climate change tweets dataset.
+\item \textbf{A/B testing on questionnaire dataset:} Conducted A/B testing on a dataset using \textbf{Python} libraries such as \textbf{numpy}, \textbf{pandas}, scipy, seaborn, matplotlib, math, and statsmodel. Calculated the p-value for the A/B testing.
+\item \textbf{Climate Change tweet classification:} Trained three models (bert, roberta, and google flan t5) on a climate change tweets dataset. Performed hyperparameter tuning and exploratory data analysis using \textbf{Python} libraries such as \textbf{numpy}, \textbf{pandas}, seaborn, matplotlib, spacy, nlkt, geopy, geopandas, tensorflow, huggingface, sklearn, and keras tuner.
+\item \textbf{Software Engineering project:} Collaborated with five other classmates on a software engineering project at the University of Windsor. Coded the backend for the project using \textbf{Python} and Flask, implemented different design patterns, created APIs, and deployed the API on Heroku. Wrote several unit tests for different modules.
+\end{itemize}
+
+\end{document}
+```
+
+This LaTeX template includes all the necessary sections and highlights the relevant keyword skills and tools. It also uses bullet points for each sentence under a subsection. The English is kept simple and easy to understand.Link to apply job :https://ca.bebee.com/job/20231003-62eea8cdfa0065d604353c32044b2398

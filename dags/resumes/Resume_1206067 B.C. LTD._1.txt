@@ -1,0 +1,46 @@
+Here is a LaTeX template for Ariq Rahman's resume:
+
+```latex
+\documentclass[a4paper,10pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{enumitem}
+\usepackage[top=30mm, bottom=30mm, left=20mm, right=20mm]{geometry}
+
+\begin{document}
+
+\begin{center}
+\Large\textbf{Ariq Rahman}\\
+\small 3 Calumet Crescent, M1H 1W4\\
+\small Mobile: 4373660580
+\end{center}
+
+\section*{\underline{Education}}
+\begin{itemize}
+\item \textbf{Master of Applied Computing, Artificial Intelligence Stream}, University of Windsor, Windsor, Ontario (May 2022-August 2023)
+\item \textbf{Bachelor of Science in Computer Science and Engineering}, Islamic University of Technology, Dhaka, Bangladesh (January 2016-November 2019)
+\end{itemize}
+
+\section*{\underline{Work Experience}}
+\begin{itemize}
+\item \textbf{Data Analytics Intern}, TD Bank of Canada (April-August 2023): Automated \textbf{Servicenow} queries and created dashboards in \textbf{PowerBI}, optimizing the ETL process and reducing query run time by \textbf{40\%}.
+\item \textbf{Artificial Intelligence Engineer}, Intelligent Machines (Sept 2021-April 2022): Worked on a handwritten text recognition project and a sound matching project, improving post-processing time by \textbf{500\%} and optimizing matching time by \textbf{300\%}, respectively.
+\end{itemize}
+
+\section*{\underline{Certifications}}
+\begin{itemize}
+\item \textbf{TensorFlow Developer Certification}
+\item \textbf{Azure Associate Data Scientist Certification} (DP-100)
+\end{itemize}
+
+\section*{\underline{Personal Projects}}
+\begin{itemize}
+\item \textbf{MLops on AWS}: Conducted preprocessing, label encoding, tokenization with the Roberta model, and supervised learning on a Kaggle dataset of tweets about climate change using \textbf{AWS Sagemaker}.
+\item \textbf{A/B testing on questionnaire dataset}: Conducted A/B testing on a survey dataset, calculating the p-value and utilizing Python libraries such as \textbf{Numpy, Pandas, Scipy, Seaborn, Matplotlib, Math, and Statsmodel}.
+\item \textbf{Climate Change tweet classification}: Trained three models (Bert, Roberta, and Google Flan T5) on a climate change dataset, performing hyperparameter tuning and exploratory data analysis.
+\item \textbf{Movie recommendation on AWS}: Developed a movie recommendation system based on the IMDB dataset, using \textbf{AWS} technologies. Created a data analysis pipeline using \textbf{AWS Glue, AWS Athena, and AWS Quicksight}.
+\end{itemize}
+
+\end{document}
+```
+
+This LaTeX template includes all the necessary sections and highlights the relevant keyword skills and tools. It also uses bullet points for each sentence under a subsection and starts each sentence with action verbs. The English is kept simple and easy to understand.Link to apply job :https://ca.bebee.com/job/20231003-ca88be47077a16a1df9f0ade13fadac7

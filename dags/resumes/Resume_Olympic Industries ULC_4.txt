@@ -1,0 +1,43 @@
+\documentclass{article}
+\usepackage{enumitem}
+\usepackage[margin=1in]{geometry}
+\usepackage{fancyhdr}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{color}
+
+\begin{document}
+
+\begin{center}
+\textbf{\Large Ariq Rahman}\\
+3 Calumet Crescent, M1H 1W4\\
+Mobile: 4373660580\\
+\end{center}
+
+\section*{\underline{Education}}
+\begin{itemize}
+\item \textbf{Master of Applied Computing, Artificial Intelligence Stream}, University of Windsor, Windsor, Ontario (May 2022-August 2023)
+\item \textbf{Bachelor of Science in Computer Science and Engineering}, Islamic University of Technology, Dhaka, Bangladesh (January 2016-November 2019)
+\end{itemize}
+
+\section*{\underline{Certifications}}
+\begin{itemize}
+\item \textbf{TensorFlow Developer Certification}
+\item \textbf{Azure Associate Data Scientist Certification DP-100}
+\end{itemize}
+
+\section*{\underline{Work Experience}}
+\begin{itemize}
+\item \textbf{Data Analytics Intern, TD Bank of Canada (April-August 2023):} Automated ServiceNow queries and downloaded files as part of the ETL process. Created dashboards in PowerBI, using optimized PowerQuery for ETL processes, and made data models in PowerBI.
+\item \textbf{Artificial Intelligence Engineer, Intelligent Machines (Sept 2021-April 2022):} Worked on a handwritten text recognition project for Unilever Bangladesh, performing data analysis, data visualization, feature engineering, and training deep learning classification models. Also worked on a sound matching project, designing and programming an algorithm that optimized matching time by 300%.
+\end{itemize}
+
+\section*{\underline{Personal Projects}}
+\begin{itemize}
+\item \textbf{MLops on AWS:} Implemented MLops on AWS SageMaker, using a Kaggle dataset of tweets about climate change. Performed data preprocessing, label encoding, tokenization with the Roberta model, and stored the model into a feature store. Used Python libraries such as sklearn, multiprocessing, transformer, numpy, pandas, tensorflow, argparse, and boto3.
+\item \textbf{A/B testing on questionnaire dataset:} Conducted A/B testing on a dataset from Kaggle, calculating the p-value for the test. Used Python libraries including numpy, pandas, scipy, seaborn, matplotlib, math, and statsmodel.
+\item \textbf{AWS orchestration of bit-coin forecast:} Used AWS Event Bridge to orchestrate multiple notebooks that included a model to forecast bitcoin prices. The notebooks were run in AWS SageMaker, with each event triggering the next stage of the pipeline. Used Python libraries such as boto3, sagemaker, pickle, matplotlib, and pandas.
+\item \textbf{Data Engineering with llm:} Automated the tailoring of resumes using a large language model (llm). Created an ETL DAG using Apache Airflow, extracted job descriptions, filtered out keywords using llm, created a data model in Cassandra, and stored the extracted keywords.
+\end{itemize}
+
+\end{document}Link to apply job :https://en-ca.whatjobs.com/jobs/Data-Engineer-Intern-Co-op/british-columbia/66861841

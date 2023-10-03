@@ -1,0 +1,49 @@
+[2023-10-03T19:12:42.649+0000] {taskinstance.py:1125} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: resume_generation_dag.get_jobs_from_database manual__2023-10-03T19:12:35.133498+00:00 [queued]>
+[2023-10-03T19:12:42.657+0000] {taskinstance.py:1125} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: resume_generation_dag.get_jobs_from_database manual__2023-10-03T19:12:35.133498+00:00 [queued]>
+[2023-10-03T19:12:42.658+0000] {taskinstance.py:1331} INFO - Starting attempt 1 of 1
+[2023-10-03T19:12:42.666+0000] {taskinstance.py:1350} INFO - Executing <Task(_PythonDecoratedOperator): get_jobs_from_database> on 2023-10-03 19:12:35.133498+00:00
+[2023-10-03T19:12:42.672+0000] {standard_task_runner.py:57} INFO - Started process 497 to run task
+[2023-10-03T19:12:42.676+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'resume_generation_dag', 'get_jobs_from_database', 'manual__2023-10-03T19:12:35.133498+00:00', '--job-id', '7', '--raw', '--subdir', 'DAGS_FOLDER/resume_generation.py', '--cfg-path', '/tmp/tmp15b7vjc0']
+[2023-10-03T19:12:42.679+0000] {standard_task_runner.py:85} INFO - Job 7: Subtask get_jobs_from_database
+[2023-10-03T19:12:42.694+0000] {logging_mixin.py:149} WARNING - /home/***/.local/lib/python3.9/site-packages/***/settings.py:188 DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+[2023-10-03T19:12:42.726+0000] {task_command.py:410} INFO - Running <TaskInstance: resume_generation_dag.get_jobs_from_database manual__2023-10-03T19:12:35.133498+00:00 [running]> on host e6edc339335d
+[2023-10-03T19:12:42.780+0000] {taskinstance.py:1568} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='resume_generation_dag' AIRFLOW_CTX_TASK_ID='get_jobs_from_database' AIRFLOW_CTX_EXECUTION_DATE='2023-10-03T19:12:35.133498+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2023-10-03T19:12:35.133498+00:00'
+[2023-10-03T19:12:42.787+0000] {database.py:12} WARNING - Cluster.__init__ called with contact_points specified, but no load_balancing_policy. In the next major version, this will raise an error; please specify a load-balancing policy. (contact_points = ['cassandra_db'], lbp = None)
+[2023-10-03T19:12:42.792+0000] {database.py:13} WARNING - [control connection] Error connecting to 172.23.0.2:9042:
+Traceback (most recent call last):
+  File "cassandra/cluster.py", line 3541, in cassandra.cluster.ControlConnection._reconnect_internal
+  File "cassandra/cluster.py", line 3563, in cassandra.cluster.ControlConnection._try_connect
+  File "cassandra/cluster.py", line 1630, in cassandra.cluster.Cluster.connection_factory
+  File "cassandra/connection.py", line 850, in cassandra.connection.Connection.factory
+  File "/home/airflow/.local/lib/python3.9/site-packages/cassandra/io/asyncorereactor.py", line 347, in __init__
+    self._connect_socket()
+  File "cassandra/connection.py", line 917, in cassandra.connection.Connection._connect_socket
+ConnectionRefusedError: [Errno 111] Tried connecting to [('172.23.0.2', 9042)]. Last error: Connection refused
+[2023-10-03T19:12:42.795+0000] {database.py:13} ERROR - Control connection failed to connect, shutting down Cluster:
+Traceback (most recent call last):
+  File "cassandra/cluster.py", line 1700, in cassandra.cluster.Cluster.connect
+  File "cassandra/cluster.py", line 3507, in cassandra.cluster.ControlConnection.connect
+  File "cassandra/cluster.py", line 3552, in cassandra.cluster.ControlConnection._reconnect_internal
+cassandra.cluster.NoHostAvailable: ('Unable to connect to any servers', {'172.23.0.2:9042': ConnectionRefusedError(111, "Tried connecting to [('172.23.0.2', 9042)]. Last error: Connection refused")})
+[2023-10-03T19:12:42.797+0000] {taskinstance.py:1847} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/decorators/base.py", line 220, in execute
+    return_value = super().execute(context)
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/operators/python.py", line 181, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/operators/python.py", line 198, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/resume_generation.py", line 88, in get_jobs_from_database
+    cassandra_manager = CassandraSessions(keyspace='job_data')
+  File "/opt/airflow/dags/database.py", line 13, in __init__
+    self.session = self.cluster.connect()
+  File "cassandra/cluster.py", line 1677, in cassandra.cluster.Cluster.connect
+  File "cassandra/cluster.py", line 1713, in cassandra.cluster.Cluster.connect
+  File "cassandra/cluster.py", line 1700, in cassandra.cluster.Cluster.connect
+  File "cassandra/cluster.py", line 3507, in cassandra.cluster.ControlConnection.connect
+  File "cassandra/cluster.py", line 3552, in cassandra.cluster.ControlConnection._reconnect_internal
+cassandra.cluster.NoHostAvailable: ('Unable to connect to any servers', {'172.23.0.2:9042': ConnectionRefusedError(111, "Tried connecting to [('172.23.0.2', 9042)]. Last error: Connection refused")})
+[2023-10-03T19:12:42.811+0000] {taskinstance.py:1368} INFO - Marking task as FAILED. dag_id=resume_generation_dag, task_id=get_jobs_from_database, execution_date=20231003T191235, start_date=20231003T191242, end_date=20231003T191242
+[2023-10-03T19:12:42.820+0000] {standard_task_runner.py:104} ERROR - Failed to execute job 7 for task get_jobs_from_database (('Unable to connect to any servers', {'172.23.0.2:9042': ConnectionRefusedError(111, "Tried connecting to [('172.23.0.2', 9042)]. Last error: Connection refused")}); 497)
+[2023-10-03T19:12:42.848+0000] {local_task_job_runner.py:232} INFO - Task exited with return code 1
+[2023-10-03T19:12:42.886+0000] {taskinstance.py:2674} INFO - 0 downstream tasks scheduled from follow-on schedule check

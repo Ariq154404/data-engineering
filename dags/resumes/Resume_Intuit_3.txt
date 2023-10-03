@@ -1,0 +1,51 @@
+Here is a LaTeX template for Ariq Rahman's resume:
+
+```latex
+\documentclass[a4paper,10pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{enumitem}
+\usepackage[top=30mm, bottom=30mm, left=20mm, right=20mm]{geometry}
+
+\begin{document}
+
+\begin{center}
+\textbf{\Large Ariq Rahman}\\
+3 Calumet Crescent, M1H 1W4\\
+Mobile: 4373660580\\
+\end{center}
+
+\textbf{\large Education}\\
+\begin{itemize}
+\item Master of Applied Computing, Artificial Intelligence Stream, University of Windsor, Windsor, Ontario (May 2022-August 2023)
+\item Bachelor of Science in Computer Science and Engineering, Islamic University of Technology, Dhaka, Bangladesh (January 2016-November 2019)
+\end{itemize}
+
+\textbf{\large Certifications}\\
+\begin{itemize}
+\item \textbf{TensorFlow Developer Certification}
+\item \textbf{Azure Associate Data Scientist Certification (DP-100)}
+\end{itemize}
+
+\textbf{\large Skills}\\
+\begin{itemize}
+\item \textbf{Python}, \textbf{Java}, \textbf{AWS}, \textbf{Unix Shell Scripting}, \textbf{Machine Learning}, \textbf{Data Analysis}, Flask, Django, Selenium, PowerBI, Numpy, Pandas, Matplotlib, Tensorflow, Keras, Docker.
+\end{itemize}
+
+\textbf{\large Work Experience}\\
+\begin{itemize}
+\item \textbf{Data Analytics Intern at TD Bank of Canada (April-August 2023):} Automated ServiceNow queries and downloads using \textbf{Python Selenium script} as part of the ETL process. Created dashboards in PowerBI, using optimized PowerQuery for ETL process, and designed data models in PowerBI.
+\item \textbf{Artificial Intelligence Engineer at Intelligent Machines (Sept 2021-April 2022):} Worked on a handwritten text recognition project and a sound matching project for Unilever Bangladesh. Utilized \textbf{Python}, Numpy, Pandas, Matplotlib, \textbf{Tensorflow}, Keras, and Docker Tensorflow Serving.
+\end{itemize}
+
+\textbf{\large Personal Projects}\\
+\begin{itemize}
+\item \textbf{MLops on AWS:} Implemented MLops on \textbf{AWS SageMaker}, using \textbf{Python} libraries such as sklearn, multiprocessing, transformer, numpy, pandas, tensorflow, argparse, and boto3. Developed a classification model to identify the sentiment of tweets about climate change.
+\item \textbf{A/B testing on questionnaire dataset:} Conducted A/B testing on a dataset, using \textbf{Python} libraries such as numpy, pandas, scipy, seaborn, matplotlib, math, and statsmodel. Calculated the p-value for the A/B testing.
+\item \textbf{Shell Script:} Wrote a Unix shell script to monitor all current user processes. If any process had more than n descendants, the script would output the process tree with p as the root on the standard output using pstree -p.
+\item \textbf{Software Engineering project:} Developed a system to locate water fountains at the University of Windsor. Coded the backend for the project, implemented various design patterns, created Flask-based APIs, and deployed the API on Heroku. Wrote unit tests for different modules and conducted code coverage.
+\end{itemize}
+
+\end{document}
+```
+
+This LaTeX template includes all the necessary sections and highlights the relevant skills and tools. It also uses bullet points for each sentence under a subsection. The language is simple and easy to understand.Link to apply job :https://ca.bebee.com/job/20231003-47f8bcc4c5100c68ee58d10393f63c66

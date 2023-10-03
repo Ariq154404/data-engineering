@@ -1,0 +1,49 @@
+Here is a LaTeX template for Ariq Rahman's resume:
+
+```latex
+\documentclass[a4paper,10pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{enumitem}
+\usepackage[top=30mm, bottom=30mm, left=20mm, right=20mm]{geometry}
+
+\begin{document}
+
+\begin{center}
+\textbf{\Large Ariq Rahman}\\
+3 Calumet Crescent, M1H 1W4\\
+Mobile: 4373660580
+\end{center}
+
+\section*{\underline{Education}}
+\begin{itemize}
+\item \textbf{Master of Applied Computing, Artificial Intelligence Stream}, University of Windsor, Windsor, Ontario (May 2022-August 2023)
+\item \textbf{Bachelor of Science in Computer Science and Engineering}, Islamic University of Technology, Dhaka, Bangladesh (January 2016-November 2019)
+\end{itemize}
+
+\section*{\underline{Certifications}}
+\begin{itemize}
+\item \textbf{TensorFlow Developer Certification}
+\item \textbf{Azure Associate Data Scientist Certification (DP-100)}
+\end{itemize}
+
+\section*{\underline{Work Experience}}
+\begin{itemize}
+\item \textbf{Data Analytics Intern}, TD Bank of Canada (April-August 2023): Automated \textbf{ServiceNow} queries and downloads using \textbf{Python selenium} script as part of the ETL process. Created dashboards in \textbf{PowerBI}, optimizing power query for ETL, which decreased the query run time by 40%.
+\item \textbf{Artificial Intelligence Engineer}, Intelligent Machines (Sept 2021-April 2022): Worked on a handwritten text recognition project and a sound matching project. Performed \textbf{data analysis}, \textbf{data visualization}, feature engineering, and trained deep learning models. Designed and coded algorithms to optimize post-processing time and matching time.
+\end{itemize}
+
+\section*{\underline{Personal Projects}}
+\begin{itemize}
+\item \textbf{A/B testing on questionnaire dataset}: Conducted A/B testing on a dataset from Kaggle, calculating the p-value for the test. Utilized Python libraries such as numpy, pandas, scipy, seaborn, matplotlib, math, and statsmodel.
+\item \textbf{Climate Change tweet classification}: Trained three models (bert, roberta, and google flan t5), performed hyperparameter tuning, and conducted exploratory data analysis on a Kaggle dataset of tweets about climate change.
+\item \textbf{Movie recommendation on AWS}: Developed a movie recommendation system based on the IMDB dataset. Used AWS technologies to convert movie descriptions into tokens and stored them as embeddings in AWS opensearch embedding space. Created a data analysis pipeline using AWS glue, AWS athena, and AWS quicksight.
+\item \textbf{IEEE Cis Fraud detection}: Participated in a binary classification project on a structured dataset to detect fraudulent papers. Performed exploratory data analysis, feature engineering, and used an ensemble of neural network and decision tree for classification.
+\end{itemize}
+
+\section*{\underline{Key Skills}}
+\textbf{Data Analysis}, \textbf{Data Visualization}, \textbf{Machine Learning}, \textbf{A/B Testing}, EDA, Feature Engineering, \textbf{Python}, Numpy, Pandas, Scipy, Seaborn, Matplotlib, \textbf{AWS}, \textbf{PowerBI}, \textbf{TensorFlow}, \textbf{Azure}.
+
+\end{document}
+```
+
+Please replace the keyword skills with the actual skills as the provided skills are not clear. Also, replace the job title with the actual job title.Link to apply job :https://ca.trabajo.org/job-850-20231003-52a7e49cfaee5b12453bfee9bd416708
